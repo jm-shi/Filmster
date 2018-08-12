@@ -1,0 +1,20 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container__title {
+  font-size: $m-spacing;
+  color: $green;
+}
+
+.container__box {
+  background: rgba(black, 0.5);
+  display: flex;
+  justify-content: center;
+  margin-top: $s-spacing;
+  padding: 10vh;
+  width: 100%;
+}
