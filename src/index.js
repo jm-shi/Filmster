@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/styles.css';
 import App from './App';
+import dotenv from 'dotenv';
+import './styles/styles.css';
+
+dotenv.config();
 
 ReactDOM.render(<App />, document.getElementById('root'));

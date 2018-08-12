@@ -5,6 +5,8 @@ import './styles/styles.scss';
 
 class App extends Component {
   render() {
+    const test = process.env;
+    console.log('test', test);
     return <AppRouter />;
   }
 }
