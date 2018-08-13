@@ -1,7 +1,8 @@
 import React from 'react';
-import { searchMovie } from '../utils/api';
+import { connect } from 'react-redux';
+import { fetchMovie } from '../actions/movieActions';
 
-export default class Searchbar extends React.Component {
+class Searchbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -16,8 +17,9 @@ export default class Searchbar extends React.Component {
   onSubmit = e => {
     e.preventDefault();
 
-    if (this.state.query) {
-      searchMovie(this.state.query);
+    const movie = this.state.query;
+    if (movie) {
+      this.props.onFetchMovie(movie);
     }
   };
   render() {
@@ -31,3 +33,16 @@ export default class Searchbar extends React.Component {
     );
   }
 }
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onFetchMovie: movie => {
+      dispatch(fetchMovie(movie));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Searchbar);
