@@ -1,6 +1,7 @@
 import {
-  REQUEST_MOVIE,
-  RECEIVE_MOVIE,
+  FETCH_MOVIE_START,
+  FETCH_MOVIE_ID_SUCCESS,
+  FETCH_MOVIE_DETAILS_SUCCESS,
   FETCH_MOVIE_FAILURE
 } from '../actions/movieActions';
 
@@ -12,18 +13,25 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case REQUEST_MOVIE:
+    case FETCH_MOVIE_START:
       return {
         ...state,
         loading: true
       };
-    case RECEIVE_MOVIE:
+    case FETCH_MOVIE_ID_SUCCESS:
       console.log('received movie', action, 'state', state);
+      return {
+        ...state,
+        loading: true,
+        movie: action.movie.id
+      };
+    case FETCH_MOVIE_DETAILS_SUCCESS:
+      console.log('movie details', action, 'state', state);
       return {
         ...state,
         error: null,
         loading: false,
-        movie: action.movie
+        movie: action
       };
     case FETCH_MOVIE_FAILURE:
       return {
@@ -35,16 +43,3 @@ export default (state = initialState, action) => {
       return state;
   }
 };
-
-/*
-export default (state = {}, action) => {
-  switch (action.type) {
-    case 'FETCH_MOVIE':
-      return {
-        result: action.movie
-      };
-    default:
-      return state;
-  }
-};
-*/

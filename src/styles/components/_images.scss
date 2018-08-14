@@ -1,0 +1,10 @@
+.backdrop {
+  box-shadow: inset $m-size $m-size 50rem $dark-blue;
+  position: relative;
+  &__image {
+    height: 40rem;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+  }
+}

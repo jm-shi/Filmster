@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchMovie } from '../actions/movieActions';
+import { fetchMovie, fetchMovieDetails } from '../actions/movieActions';
+import { history } from '../AppRouter';
 
 class Searchbar extends React.Component {
   constructor(props) {
@@ -19,7 +20,11 @@ class Searchbar extends React.Component {
 
     const movie = this.state.query;
     if (movie) {
-      this.props.onFetchMovie(movie);
+      Promise.resolve(this.props.onFetchMovie(movie)).then(() => {
+        console.log('searchbar.js: this.props gives us  ', this.props);
+        this.props.onFetchMovieDetails(this.props.movie);
+        history.push('/details');
+      });
     }
   };
   render() {
@@ -34,15 +39,21 @@ class Searchbar extends React.Component {
   }
 }
 
+const mapStateToProps = state => {
+  const { movie } = state.movieReducer;
+  return {
+    movie
+  };
+};
+
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchMovie: movie => {
-      dispatch(fetchMovie(movie));
-    }
+    onFetchMovie: movie => dispatch(fetchMovie(movie)),
+    onFetchMovieDetails: movieID => dispatch(fetchMovieDetails(movieID))
   };
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Searchbar);

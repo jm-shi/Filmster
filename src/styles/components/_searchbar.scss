@@ -1,10 +1,14 @@
 .searchbar {
   background: $green;
   color: $dark-blue;
-  padding: $m-spacing;
+  padding: $m-size;
   width: 55rem;
   text-align: center;
   input {
+    background: $dark-blue;
+    border: none;
+    color: white;
+    font-size: 2em;
     padding: 1.2rem;
     width: 80vw;
     text-align: center;
@@ -12,5 +16,8 @@
     @media (min-width: $small-screen-breakpoint) {
       width: 50rem;
     }
+  }
+  input:focus {
+    outline: none;
   }
 }

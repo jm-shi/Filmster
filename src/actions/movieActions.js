@@ -1,14 +1,20 @@
 import axios from 'axios';
 
-export const REQUEST_MOVIE = 'REQUEST_MOVIE';
-const requestMovie = () => ({
-  type: REQUEST_MOVIE
+export const FETCH_MOVIE_START = 'FETCH_MOVIE_START';
+const fetchMovieStart = () => ({
+  type: FETCH_MOVIE_START
 });
 
-export const RECEIVE_MOVIE = 'RECEIVE_MOVIE';
-const receiveMovie = data => ({
-  type: RECEIVE_MOVIE,
-  data
+export const FETCH_MOVIE_ID_SUCCESS = 'FETCH_MOVIE_ID_SUCCESS';
+const fetchMovieIdSuccess = movie => ({
+  type: FETCH_MOVIE_ID_SUCCESS,
+  movie
+});
+
+export const FETCH_MOVIE_DETAILS_SUCCESS = 'FETCH_MOVIE_DETAILS_SUCCESS';
+const fetchMovieDetailsSuccess = movie => ({
+  type: FETCH_MOVIE_DETAILS_SUCCESS,
+  movie
 });
 
 export const FETCH_MOVIE_FAILURE = 'FETCH_MOVIE_FAILURE';
@@ -19,7 +25,7 @@ const fetchMovieFailure = error => ({
 
 export const fetchMovie = movieTitle => {
   return dispatch => {
-    dispatch(requestMovie());
+    dispatch(fetchMovieStart());
 
     const prefix = `https://api.themoviedb.org/3/search/movie?api_key=${
       process.env.REACT_APP_MOVIE_API_KEY
@@ -29,7 +35,24 @@ export const fetchMovie = movieTitle => {
     return axios
       .get(searchRequest)
       .then(response => {
-        dispatch(receiveMovie(response.data));
+        dispatch(fetchMovieIdSuccess(response.data.results[0]));
+      })
+      .catch(error => {
+        dispatch(fetchMovieFailure(error.message));
+      });
+  };
+};
+
+export const fetchMovieDetails = movieID => {
+  return dispatch => {
+    const request = `https://api.themoviedb.org/3/movie/${movieID}?api_key=${
+      process.env.REACT_APP_MOVIE_API_KEY
+    }&language=en-US`;
+    return axios
+      .get(request)
+      .then(response => {
+        console.log('movieAction.js: response is ', response);
+        dispatch(fetchMovieDetailsSuccess(response.data));
       })
       .catch(error => {
         dispatch(fetchMovieFailure(error.message));

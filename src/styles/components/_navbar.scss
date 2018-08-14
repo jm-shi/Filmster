@@ -1,0 +1,22 @@
+.links {
+  margin-left: auto;
+}
+
+.navbar {
+  background: rgba(black, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+  line-height: $m-size;
+}
+
+.search {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: $s-size;
+  margin-left: $s-size;
+  outline: 0;
+  width: 25em;
+}

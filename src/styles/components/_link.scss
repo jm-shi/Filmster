@@ -1,10 +1,10 @@
-.link {
-  color: white;
-  font-size: 4rem;
-  margin: 0 $m-spacing;
-  text-decoration: none;
-}
-
 .active {
   color: $green;
+}
+
+.link {
+  color: white;
+  font-size: 2rem;
+  margin: 0 $s-size;
+  text-decoration: none;
 }

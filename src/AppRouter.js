@@ -1,19 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
+
 import DetailsPage from './components/DetailsPage';
 import HomePage from './components/HomePage';
 import LoginPage from './components/LoginPage';
 import NotFoundPage from './components/NotFoundPage';
 
+export const history = createHistory();
+
 const AppRouter = () => (
-  <BrowserRouter>
+  <Router history={history}>
     <Switch>
       <Route exact={true} path="/" component={HomePage} />
       <Route path="/login" component={LoginPage} />
-      <Route path="/details:id" component={DetailsPage} />
+      <Route path="/details" component={DetailsPage} />
       <Route component={NotFoundPage} />
     </Switch>
-  </BrowserRouter>
+  </Router>
 );
 
 export default AppRouter;
