@@ -18,11 +18,10 @@ class Searchbar extends React.Component {
   onSubmit = e => {
     e.preventDefault();
 
-    const movie = this.state.query;
-    if (movie) {
-      Promise.resolve(this.props.onFetchMovie(movie)).then(() => {
-        console.log('searchbar.js: this.props gives us  ', this.props);
-        this.props.onFetchMovieDetails(this.props.movie);
+    const movieTitle = this.state.query;
+    if (movieTitle) {
+      Promise.resolve(this.props.onFetchMovie(movieTitle)).then(() => {
+        this.props.onFetchMovieDetails(this.props.id);
         history.push('/details');
       });
     }
@@ -40,9 +39,10 @@ class Searchbar extends React.Component {
 }
 
 const mapStateToProps = state => {
-  const { movie } = state.movieReducer;
+  const { movieDetails, id } = state.movieReducer;
   return {
-    movie
+    movieDetails,
+    id
   };
 };
 

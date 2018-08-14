@@ -7,27 +7,61 @@ class DetailsPage extends React.Component {
   render() {
     let {
       backdrop_path,
+      budget,
+      homepage,
+      genres,
       title,
       overview,
       poster_path,
-      release_date
-    } = this.props.movie;
+      release_date,
+      revenue,
+      runtime,
+      tagline
+    } = this.props.movieDetails;
 
-    console.log('detailspage this.props', this.props);
-
-    if (!title) {
+    if (!this.props.movieDetails) {
       backdrop_path = '/5XPPB44RQGfkBrbJxmtdndKz05n.jpg';
+      budget = 237000000;
+      genres = [
+        {
+          id: 28,
+          name: 'Action'
+        },
+        {
+          id: 12,
+          name: 'Adventure'
+        },
+        {
+          id: 14,
+          name: 'Science Fiction'
+        }
+      ];
+      homepage = 'http://www.avatarmovie.com/';
       title = 'Avatar';
       overview =
         'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.';
       poster_path = '/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg';
       release_date = '2009-12-10';
+      revenue = 2787965087;
+      runtime = 162;
+      tagline = 'Enter the World of Pandora.';
     }
 
     const backdrop_path_url = `http://image.tmdb.org/t/p/original/${backdrop_path}`;
     const poster_path_url = `https://image.tmdb.org/t/p/w342/${poster_path}`;
-    console.log('details page props', this.props.movie);
-    //console.log(backdrop_path, title, overview, poster_path, release_date);
+
+    console.log('DetailsPage.js: this.props', this.props);
+    console.log('backdrop_path', backdrop_path);
+    console.log('budget', budget);
+    console.log('homepage', homepage);
+    console.log('genres', genres);
+    console.log('title', title);
+    console.log('overview', overview);
+    console.log('poster_path', poster_path);
+    console.log('release_date', release_date);
+    console.log('revenue', revenue);
+    console.log('runtime', runtime);
+    console.log('tagline', tagline);
 
     return (
       <div>
@@ -57,10 +91,9 @@ class DetailsPage extends React.Component {
 }
 
 const mapStateToProps = state => {
-  console.log('detailspage state is', state);
-  const { movie } = state.movieReducer;
+  const { movieDetails } = state.movieReducer;
   return {
-    movie
+    movieDetails
   };
 };
 

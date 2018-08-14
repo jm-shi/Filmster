@@ -7,8 +7,9 @@ import {
 
 const initialState = {
   error: null,
+  id: '',
   loading: false,
-  movie: ''
+  movieDetails: ''
 };
 
 export default (state = initialState, action) => {
@@ -19,19 +20,17 @@ export default (state = initialState, action) => {
         loading: true
       };
     case FETCH_MOVIE_ID_SUCCESS:
-      console.log('received movie', action, 'state', state);
       return {
         ...state,
         loading: true,
-        movie: action.movie.id
+        id: action.id
       };
     case FETCH_MOVIE_DETAILS_SUCCESS:
-      console.log('movie details', action, 'state', state);
       return {
         ...state,
         error: null,
         loading: false,
-        movie: action
+        movieDetails: action.movieDetails
       };
     case FETCH_MOVIE_FAILURE:
       return {
