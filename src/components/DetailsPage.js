@@ -16,7 +16,8 @@ class DetailsPage extends React.Component {
       release_date,
       revenue,
       runtime,
-      tagline
+      tagline,
+      vote_average
     } = this.props.movieDetails;
 
     if (!this.props.movieDetails) {
@@ -45,6 +46,7 @@ class DetailsPage extends React.Component {
       revenue = 2787965087;
       runtime = 162;
       tagline = 'Enter the World of Pandora.';
+      vote_average = 7.3;
     }
 
     const backdrop_path_url = `http://image.tmdb.org/t/p/original/${backdrop_path}`;
@@ -62,21 +64,11 @@ class DetailsPage extends React.Component {
     console.log('revenue', revenue);
     console.log('runtime', runtime);
     console.log('tagline', tagline);
+    console.log('vote_average', vote_average);
 
     return (
       <div>
         <Navbar />
-
-        <div className="row row--med-margin-y">
-          <div className="col col--center">
-            <img src={poster_path_url} alt="poster" />
-          </div>
-          <div className="col">
-            <h1>{title}</h1>
-            <h2>{release_date}</h2>
-            <h2>{overview}</h2>
-          </div>
-        </div>
 
         <div className="backdrop">
           <img
@@ -84,6 +76,63 @@ class DetailsPage extends React.Component {
             src={backdrop_path_url}
             alt="backdrop"
           />
+        </div>
+
+        <div className="container container--med-margin-y">
+          <div className="container__column">
+            <img src={poster_path_url} alt="poster" />
+          </div>
+          <div className="container__column details">
+            <div className="details--large">{title}</div>
+
+            <div className="details--med details--green">{tagline}</div>
+            <div className="details--med-small">{overview}</div>
+
+            <div className="line-break" />
+
+            <div className="grid">
+              <div className="grid__item-halves details--med-small">
+                <div className="details--green">Release Date</div>
+                {release_date}
+              </div>
+              <div className="grid__item-halves details--med-small details-green">
+                <div className="details--green">Revenue</div>
+                {revenue}
+              </div>
+              <div className="grid__item-halves details--med-small details-green">
+                <div className="details--green">Runtime</div>
+                {runtime}
+              </div>
+              <div className="grid__item-halves details--med-small details-green">
+                <div className="details--green">Rating</div>
+                {vote_average}
+                /10
+              </div>
+            </div>
+
+            <div className="details--med-small">
+              <span className="details--green">Genres: </span>
+              {genres.map((genre, index) => {
+                return (
+                  <span key={genre.id}>
+                    {genre.name}
+                    {index < genres.length - 1 ? ', ' : ''}
+                  </span>
+                );
+              })}
+            </div>
+
+            {homepage ? (
+              <div className="details--med-small">
+                <span className="details--green">Homepage: </span>
+                <a className="details__link" href={homepage}>
+                  {homepage}
+                </a>
+              </div>
+            ) : (
+              ''
+            )}
+          </div>
         </div>
       </div>
     );

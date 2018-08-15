@@ -1,0 +1,35 @@
+.details {
+  padding: $ms-size;
+  &--green {
+    color: $green;
+  }
+  &--large {
+    font-size: $l-size;
+    padding-bottom: $xs-size;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+  &--med {
+    font-size: $m-size;
+    padding-bottom: $s-size;
+  }
+  &--med-small {
+    font-size: $ms-size;
+    padding-bottom: $s-size;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  &__item-halves {
+    width: 50%;
+  }
+}
+
+.line-break {
+  padding-bottom: $ms-size;
+}

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <div className="navbar">
-    <div className="container__title">MovieDB</div>
+    <div className="logo">MovieDB</div>
     <input className="search" placeholder="Search for a movie" />
 
     <div className="links">

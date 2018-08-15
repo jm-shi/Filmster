@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import Searchbar from './Searchbar';
 
 const HomePage = () => (
-  <div className="container">
-    <div className="container__title">
+  <div className="container container--column">
+    <div className="logo">
       <h1>MovieDB</h1>
     </div>
 
