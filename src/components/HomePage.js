@@ -18,7 +18,7 @@ const HomePage = () => (
     </div>
 
     <div className="container__box">
-      <Searchbar />
+      <Searchbar formClass={'home__searchbar'} onHomePage={true} />
     </div>
   </div>
 );

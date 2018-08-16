@@ -3,10 +3,6 @@
   &--green {
     color: $green;
   }
-  &--large {
-    font-size: $l-size;
-    padding-bottom: $xs-size;
-  }
   &__link {
     color: white;
     text-decoration: none;
@@ -18,6 +14,13 @@
   &--med-small {
     font-size: $ms-size;
     padding-bottom: $s-size;
+  }
+  &__title {
+    font-size: $m-size;
+    padding-bottom: $xs-size;
+    @media (min-width: $small-screen-breakpoint) {
+      font-size: $l-size;
+    }
   }
 }
 

@@ -1,8 +1,11 @@
 @import 'src/styles/base/settings.scss';
 @import 'src/styles/base/base.scss';
+@import 'src/styles/base/misc.scss';
+@import 'src/styles/base/screensize.scss';
 @import 'src/styles/components/container.scss';
 @import 'src/styles/components/details.scss';
+@import 'src/styles/components/dropdown.scss';
+@import 'src/styles/components/home.scss';
 @import 'src/styles/components/images.scss';
 @import 'src/styles/components/link.scss';
 @import 'src/styles/components/navbar.scss';
-@import 'src/styles/components/searchbar.scss';

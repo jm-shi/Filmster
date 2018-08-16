@@ -1,0 +1,32 @@
+.dropdown {
+  text-align: right;
+  width: 200px;
+  &__button {
+    font-size: $m-size;
+  }
+}
+
+li {
+  padding: $s-size $ms-size;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  &:first-child {
+    border-top: 1px solid white;
+  }
+  &:hover {
+    background-color: rgba(black, 0.6);
+  }
+}
+
+ul {
+  background: rgba(black, 0.7);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 45px;
+  width: 210px;
+  z-index: 1;
+}

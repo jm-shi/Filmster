@@ -1,6 +1,8 @@
 .container {
   align-items: center;
   display: flex;
+  flex-direction: column-reverse;
+  word-break: break-word;
 
   &__box {
     background: rgba(black, 0.5);
@@ -18,8 +20,19 @@
     margin: 0 $m-size;
     padding: $s-size;
   }
+  &--margin-bottom {
+    margin-bottom: $m-size;
+  }
   &--med-margin-y {
     margin-bottom: $m-size;
     margin-top: $m-size;
+  }
+  @media (min-width: $small-screen-breakpoint) {
+    &__details {
+      flex-direction: row;
+    }
+    &--margin-botom {
+      margin-bottom: 0;
+    }
   }
 }

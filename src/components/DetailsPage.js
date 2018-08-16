@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
 import Navbar from './Navbar';
 
 class DetailsPage extends React.Component {
+  showSettings(event) {
+    event.preventDefault();
+  }
   render() {
     let {
       backdrop_path,
@@ -43,7 +45,7 @@ class DetailsPage extends React.Component {
         'In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.';
       poster_path = '/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg';
       release_date = '2009-12-10';
-      revenue = 2787965087;
+      revenue = '2,787,965,087';
       runtime = 162;
       tagline = 'Enter the World of Pandora.';
       vote_average = 7.3;
@@ -51,6 +53,7 @@ class DetailsPage extends React.Component {
 
     const backdrop_path_url = `http://image.tmdb.org/t/p/original/${backdrop_path}`;
     const poster_path_url = `https://image.tmdb.org/t/p/w342/${poster_path}`;
+    const poster_path_url_small = `https://image.tmdb.org/t/p/w185/${poster_path}`;
 
     console.log('DetailsPage.js: this.props', this.props);
     console.log('backdrop_path', backdrop_path);
@@ -78,12 +81,18 @@ class DetailsPage extends React.Component {
           />
         </div>
 
-        <div className="container container--med-margin-y">
+        <div className="container container__details container--med-margin-y">
           <div className="container__column">
-            <img src={poster_path_url} alt="poster" />
+            <img className="large-screen" src={poster_path_url} alt="poster" />
+            <img
+              className="sub-large-screen"
+              src={poster_path_url_small}
+              alt="poster"
+            />
           </div>
-          <div className="container__column details">
-            <div className="details--large">{title}</div>
+
+          <div className="container__column container--margin-bottom details">
+            <div className="details__title">{title}</div>
 
             <div className="details--med details--green">{tagline}</div>
             <div className="details--med-small">{overview}</div>
@@ -96,12 +105,12 @@ class DetailsPage extends React.Component {
                 {release_date}
               </div>
               <div className="grid__item-halves details--med-small details-green">
-                <div className="details--green">Revenue</div>
-                {revenue}
+                <div className="details--green">Revenue</div>$
+                {revenue.toLocaleString()}
               </div>
               <div className="grid__item-halves details--med-small details-green">
                 <div className="details--green">Runtime</div>
-                {runtime}
+                {runtime} minutes
               </div>
               <div className="grid__item-halves details--med-small details-green">
                 <div className="details--green">Rating</div>
@@ -129,9 +138,7 @@ class DetailsPage extends React.Component {
                   {homepage}
                 </a>
               </div>
-            ) : (
-              ''
-            )}
+            ) : null}
           </div>
         </div>
       </div>

@@ -1,0 +1,27 @@
+.large-screen {
+  display: none;
+  @media (min-width: $medium-screen-breakpoint) {
+    display: block;
+  }
+}
+
+.sub-large-screen {
+  display: block;
+  @media (min-width: $medium-screen-breakpoint) {
+    display: none;
+  }
+}
+
+.medium-screen {
+  display: none;
+  @media (min-width: $small-screen-breakpoint) {
+    display: block;
+  }
+}
+
+.small-screen {
+  display: block;
+  @media (min-width: $small-screen-breakpoint) {
+    display: none;
+  }
+}
