@@ -56,7 +56,7 @@ class DetailsPage extends React.Component {
     const poster_path_url_small = `https://image.tmdb.org/t/p/w185/${poster_path}`;
 
     console.log('DetailsPage.js: this.props', this.props);
-    console.log('backdrop_path', backdrop_path);
+    /*console.log('backdrop_path', backdrop_path);
     console.log('budget', budget);
     console.log('homepage', homepage);
     console.log('genres', genres);
@@ -67,7 +67,7 @@ class DetailsPage extends React.Component {
     console.log('revenue', revenue);
     console.log('runtime', runtime);
     console.log('tagline', tagline);
-    console.log('vote_average', vote_average);
+    console.log('vote_average', vote_average);*/
 
     return (
       <div>
@@ -105,18 +105,25 @@ class DetailsPage extends React.Component {
                 {release_date}
               </div>
               <div className="grid__item-halves details--med-small details-green">
-                <div className="details--green">Revenue</div>$
-                {revenue.toLocaleString()}
+                <div className="details--green">Rating</div>
+                {vote_average}
+                /10
               </div>
               <div className="grid__item-halves details--med-small details-green">
                 <div className="details--green">Runtime</div>
                 {runtime} minutes
               </div>
               <div className="grid__item-halves details--med-small details-green">
-                <div className="details--green">Rating</div>
-                {vote_average}
-                /10
+                <div className="details--green">Budget</div>$
+                {budget.toLocaleString()}
               </div>
+            </div>
+
+            <div className="line-break" />
+
+            <div className="details--med-small">
+              <span className="details--green">Revenue: </span>$
+              {revenue.toLocaleString()}
             </div>
 
             <div className="details--med-small">

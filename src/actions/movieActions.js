@@ -5,10 +5,10 @@ const fetchMovieStart = () => ({
   type: FETCH_MOVIE_START
 });
 
-export const FETCH_MOVIE_ID_SUCCESS = 'FETCH_MOVIE_ID_SUCCESS';
-const fetchMovieIdSuccess = id => ({
-  type: FETCH_MOVIE_ID_SUCCESS,
-  id
+export const FETCH_MOVIES_SUCCESS = 'FETCH_MOVIES_SUCCESS';
+const fetchMoviesSuccess = searchedMovies => ({
+  type: FETCH_MOVIES_SUCCESS,
+  searchedMovies
 });
 
 export const FETCH_MOVIE_DETAILS_SUCCESS = 'FETCH_MOVIE_DETAILS_SUCCESS';
@@ -35,7 +35,7 @@ export const fetchMovie = movieTitle => {
     return axios
       .get(searchRequest)
       .then(response => {
-        dispatch(fetchMovieIdSuccess(response.data.results[0].id));
+        dispatch(fetchMoviesSuccess(response.data.results));
       })
       .catch(error => {
         dispatch(fetchMovieFailure(error.message));

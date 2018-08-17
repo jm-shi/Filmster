@@ -1,6 +1,5 @@
 .dropdown {
   text-align: right;
-  width: 200px;
   &__button {
     font-size: $m-size;
   }
@@ -23,10 +22,11 @@ ul {
   background: rgba(black, 0.7);
   list-style-type: none;
   margin: 0;
+  margin-left: -85px;
   padding: 0;
   position: absolute;
   text-align: center;
   top: 45px;
-  width: 210px;
+  width: 200px;
   z-index: 1;
 }

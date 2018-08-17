@@ -36,3 +36,19 @@
     }
   }
 }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &__container {
+    padding: $s-size;
+  }
+  &__item-halves {
+    width: 50%;
+  }
+  &__results {
+    margin-top: $m-size;
+  }
+}

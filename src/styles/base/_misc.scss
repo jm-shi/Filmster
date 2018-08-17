@@ -4,6 +4,12 @@
   color: $dark-blue;
   margin-left: 5px;
   padding: 5px;
+  &--home {
+    background: $dark-blue;
+    color: $green;
+    margin-top: $s-size;
+    padding: 5px $m-size;
+  }
 }
 
 form {

@@ -24,15 +24,6 @@
   }
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  &__item-halves {
-    width: 50%;
-  }
-}
-
 .line-break {
   padding-bottom: $ms-size;
 }

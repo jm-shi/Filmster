@@ -21,8 +21,7 @@ class Searchbar extends React.Component {
     const movieTitle = this.state.query;
     if (movieTitle) {
       Promise.resolve(this.props.onFetchMovie(movieTitle)).then(() => {
-        this.props.onFetchMovieDetails(this.props.id);
-        history.push('/details');
+        history.push('/results');
       });
     }
   };
@@ -30,14 +29,21 @@ class Searchbar extends React.Component {
     return (
       <form className={this.props.formClass} onSubmit={this.onSubmit}>
         {this.props.onHomePage ? <h1>Search for movies and TV shows</h1> : ''}
-        <input
-          className={this.props.inputClass}
-          value={this.state.query}
-          onChange={this.onQueryChange}
-          placeholder={'Search for a movie'}
-        />
 
-        <button className="button">Search</button>
+        <div>
+          <input
+            className={this.props.inputClass}
+            value={this.state.query}
+            onChange={this.onQueryChange}
+            placeholder={'Search for a movie'}
+          />
+
+          {this.props.onHomePage ? (
+            <button className="button button--home">Search</button>
+          ) : (
+            <button className="button">Search</button>
+          )}
+        </div>
       </form>
     );
   }
