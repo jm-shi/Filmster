@@ -3,8 +3,8 @@ import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
 import DetailsPage from './components/DetailsPage';
+import DiscoverPage from './components/DiscoverPage';
 import HomePage from './components/HomePage';
-import LoginPage from './components/LoginPage';
 import NotFoundPage from './components/NotFoundPage';
 import SearchResultsPage from './components/SearchResultsPage';
 
@@ -14,8 +14,8 @@ const AppRouter = () => (
   <Router history={history}>
     <Switch>
       <Route exact={true} path="/" component={HomePage} />
-      <Route path="/login" component={LoginPage} />
       <Route path="/details" component={DetailsPage} />
+      <Route path="/discover/:type?" component={DiscoverPage} />
       <Route path="/results" component={SearchResultsPage} />
       <Route component={NotFoundPage} />
     </Switch>

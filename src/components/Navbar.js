@@ -64,14 +64,14 @@ const Navbar = () => (
     </div>
 
     <div className="navbar--right links medium-screen">
-      <NavLink exact={true} activeClassName="active" className="link" to="/">
+      <NavLink exact={true} activeClassName="selected" className="link" to="/">
         Home
       </NavLink>
-      <NavLink activeClassName="active" className="link" to="/login">
-        Discover
+      <NavLink activeClassName="selected" className="link" to="/results">
+        Search
       </NavLink>
-      <NavLink activeClassName="active" className="link" to="/login">
-        Login
+      <NavLink activeClassName="selected" className="link" to="/discover">
+        Discover
       </NavLink>
     </div>
   </div>

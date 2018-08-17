@@ -1,13 +1,22 @@
-.active {
-  color: $green;
-}
-
 .link {
   color: white;
-  font-size: 2rem;
+  font-size: $ms-size;
   margin: 0 $s-size;
   text-decoration: none;
   &__logo {
     margin: 0;
   }
+  &__nav {
+    font-size: 14px;
+    @media (min-width: 360px) {
+      font-size: 16px;
+    }
+    @media (min-width: $small-screen-breakpoint) {
+      font-size: $ms-size;
+    }
+  }
+}
+
+.selected {
+  color: $green;
 }

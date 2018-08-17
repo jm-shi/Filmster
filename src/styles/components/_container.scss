@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
   word-break: break-word;
 
   &__box {
@@ -23,9 +24,15 @@
   &--margin-bottom {
     margin-bottom: $m-size;
   }
+  &--margin-top-ms {
+    margin-top: $ms-size;
+  }
   &--med-margin-y {
     margin-bottom: $m-size;
     margin-top: $m-size;
+  }
+  &--row {
+    flex-direction: row;
   }
   @media (min-width: $small-screen-breakpoint) {
     &__details {
@@ -49,6 +56,6 @@
     width: 50%;
   }
   &__results {
-    margin-top: $m-size;
+    margin-top: $s-size;
   }
 }
