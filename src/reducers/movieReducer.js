@@ -7,7 +7,6 @@ import {
 
 const initialState = {
   error: null,
-  id: '',
   loading: false,
   searchedMovies: [],
   movieDetails: ''

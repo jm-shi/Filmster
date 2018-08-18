@@ -1,68 +1,108 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchMovieDetails } from '../actions/movieActions';
+import { fetchMovie } from '../actions/movieActions';
 import { history } from '../AppRouter';
-import Navbar from '../components/Navbar';
+import LoadingPage from './LoadingPage';
+import Navbar from './Navbar';
 
 class SearchResultsPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      moviesList: []
+    };
+  }
   goToDetails = id => {
     if (id) {
-      Promise.resolve(this.props.onFetchMovieDetails(id)).then(() => {
-        history.push('/details');
+      history.push({
+        pathname: '/details',
+        state: id
       });
     }
   };
+  fetchMovies = () => {
+    const movieTitle = this.props.location.state;
+    if (!movieTitle) return;
+
+    Promise.resolve(this.props.onFetchMovie(movieTitle)).then(() => {
+      const moviesList = this.props.searchedMovies;
+      this.setState(() => ({
+        moviesList
+      }));
+    });
+  };
+
+  componentDidMount = () => {
+    this.fetchMovies();
+  };
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location.state !== prevProps.location.state) {
+      this.fetchMovies();
+    }
+  }
 
   render() {
-    const moviesList = this.props.searchedMovies;
+    const { moviesList } = this.state;
+    const { loading } = this.props;
     const poster_path = 'https://image.tmdb.org/t/p/w185/';
+
     return (
       <div>
         <Navbar />
 
-        {moviesList.length === 0 ? <div>Search for a movie</div> : null}
+        {moviesList.length === 0 && !loading ? (
+          <div className="container--centered">
+            <div className="text--ms">
+              Enter a movie title in the searchbar above.
+            </div>
+          </div>
+        ) : loading ? (
+          <LoadingPage />
+        ) : (
+          <div className="grid grid__results">
+            {moviesList.map(movie => {
+              return movie.id && movie.poster_path && movie.title ? (
+                <div className="grid__container" key={movie.id}>
+                  <img
+                    className="image-item"
+                    onClick={() => this.goToDetails(movie.id)}
+                    src={poster_path + movie.poster_path}
+                    style={{ height: '278px', width: '185px' }}
+                    alt="poster"
+                  />
 
-        <div className="grid grid__results">
-          {moviesList.map(movie => {
-            return movie.id && movie.poster_path && movie.title ? (
-              <div className="grid__container" key={movie.id}>
-                <img
-                  className="image-item"
-                  onClick={() => this.goToDetails(movie.id)}
-                  src={poster_path + movie.poster_path}
-                  style={{ height: '278px', width: '185px' }}
-                  alt="poster"
-                />
-
-                <div
-                  style={{
-                    fontSize: '16px',
-                    width: '185px',
-                    margin: 'auto'
-                  }}
-                >
-                  {movie.title}
+                  <div
+                    style={{
+                      fontSize: '16px',
+                      width: '185px',
+                      margin: 'auto'
+                    }}
+                  >
+                    {movie.title}
+                  </div>
                 </div>
-              </div>
-            ) : null;
-          })}
-        </div>
+              ) : null;
+            })}
+          </div>
+        )}
       </div>
     );
   }
 }
 
 const mapStateToProps = state => {
-  const { id, searchedMovies } = state.movieReducer;
+  const { loading, searchedMovies } = state.movieReducer;
   return {
-    id,
+    loading,
     searchedMovies
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchMovieDetails: movieID => dispatch(fetchMovieDetails(movieID))
+    onFetchMovie: movieID => dispatch(fetchMovie(movieID))
   };
 };
 

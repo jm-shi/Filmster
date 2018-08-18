@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
 
+import LoadingPage from './LoadingPage';
 import Gallery from './Gallery';
 import Navbar from './Navbar';
 
@@ -10,12 +11,13 @@ class DiscoverPage extends React.Component {
     super(props);
 
     this.state = {
-      results: []
+      results: [],
+      loading: true
     };
   }
 
-  getMovies = () => {
-    let searchType = this.props.match.params.type;
+  getMovies = props => {
+    let searchType = props.match.params.type;
     searchType = searchType === undefined ? 'now_playing' : searchType;
     const api = `https://api.themoviedb.org/3/movie/${searchType}?api_key=${
       process.env.REACT_APP_MOVIE_API_KEY
@@ -24,7 +26,10 @@ class DiscoverPage extends React.Component {
     axios
       .get(api)
       .then(response => {
-        this.setState(() => ({ results: response.data.results }));
+        this.setState(() => ({
+          results: response.data.results,
+          loading: false
+        }));
       })
       .catch(error => {
         console.log(error.message);
@@ -32,17 +37,20 @@ class DiscoverPage extends React.Component {
   };
 
   componentDidMount = () => {
-    this.getMovies();
+    this.getMovies(this.props);
   };
 
-  componentWillReceiveProps = () => {
-    this.getMovies();
+  componentWillReceiveProps = nextProps => {
+    this.getMovies(nextProps);
   };
 
   render() {
+    const { loading } = this.state;
     return (
       <div>
         <Navbar />
+
+        {loading ? <LoadingPage /> : null}
 
         <div className="container container--row container--margin-top-ms">
           <div className="grid">
@@ -78,7 +86,6 @@ class DiscoverPage extends React.Component {
           </div>
         </div>
 
-        {this.state.results.length === 0 ? <div>Search for a movie</div> : null}
         <Gallery movies={this.state.results} />
       </div>
     );

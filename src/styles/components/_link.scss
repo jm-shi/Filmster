@@ -3,6 +3,9 @@
   font-size: $ms-size;
   margin: 0 $s-size;
   text-decoration: none;
+  &--green {
+    color: $green;
+  }
   &__logo {
     margin: 0;
   }

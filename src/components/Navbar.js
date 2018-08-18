@@ -33,13 +33,13 @@ class Dropdown extends React.Component {
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/discover">
-                Discover
+              <NavLink className="link" to="/results">
+                Search
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/login">
-                Login
+              <NavLink className="link" to="/discover">
+                Discover
               </NavLink>
             </li>
           </ul>

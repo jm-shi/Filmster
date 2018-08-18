@@ -15,3 +15,9 @@
 form {
   margin-top: 3px;
 }
+
+.text {
+  &--ms {
+    font-size: $ms-size;
+  }
+}

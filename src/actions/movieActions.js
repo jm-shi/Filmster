@@ -45,6 +45,8 @@ export const fetchMovie = movieTitle => {
 
 export const fetchMovieDetails = movieID => {
   return dispatch => {
+    dispatch(fetchMovieStart());
+
     const request = `https://api.themoviedb.org/3/movie/${movieID}?api_key=${
       process.env.REACT_APP_MOVIE_API_KEY
     }&language=en-US`;
