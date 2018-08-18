@@ -18,7 +18,7 @@ class Searchbar extends React.Component {
     const movieTitle = this.state.query;
     if (movieTitle) {
       history.push({
-        pathname: '/results',
+        pathname: '/search',
         state: movieTitle
       });
     }

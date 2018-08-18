@@ -12,6 +12,9 @@ const HomePage = () => (
       <NavLink exact={true} activeClassName="selected" className="link" to="/">
         Home
       </NavLink>
+      <NavLink activeClassName="selected" className="link" to="/search">
+        Search
+      </NavLink>
       <NavLink activeClassName="selected" className="link" to="/discover">
         Discover
       </NavLink>

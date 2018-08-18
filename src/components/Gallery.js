@@ -7,8 +7,9 @@ import { history } from '../AppRouter';
 class Gallery extends React.Component {
   goToDetails = id => {
     if (id) {
-      Promise.resolve(this.props.onFetchMovieDetails(id)).then(() => {
-        history.push('/details');
+      history.push({
+        pathname: '/details',
+        state: id
       });
     }
   };

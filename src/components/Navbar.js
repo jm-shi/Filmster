@@ -33,7 +33,7 @@ class Dropdown extends React.Component {
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/results">
+              <NavLink className="link" to="/search">
                 Search
               </NavLink>
             </li>
@@ -67,7 +67,7 @@ const Navbar = () => (
       <NavLink exact={true} activeClassName="selected" className="link" to="/">
         Home
       </NavLink>
-      <NavLink activeClassName="selected" className="link" to="/results">
+      <NavLink activeClassName="selected" className="link" to="/search">
         Search
       </NavLink>
       <NavLink activeClassName="selected" className="link" to="/discover">

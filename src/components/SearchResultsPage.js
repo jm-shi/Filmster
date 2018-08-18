@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchMovie } from '../actions/movieActions';
 import { history } from '../AppRouter';
 import LoadingPage from './LoadingPage';
+import Gallery from './Gallery';
 import Navbar from './Navbar';
 
 class SearchResultsPage extends React.Component {
@@ -46,7 +47,6 @@ class SearchResultsPage extends React.Component {
   render() {
     const { moviesList } = this.state;
     const { loading } = this.props;
-    const poster_path = 'https://image.tmdb.org/t/p/w185/';
 
     return (
       <div>
@@ -61,31 +61,7 @@ class SearchResultsPage extends React.Component {
         ) : loading ? (
           <LoadingPage />
         ) : (
-          <div className="grid grid__results">
-            {moviesList.map(movie => {
-              return movie.id && movie.poster_path && movie.title ? (
-                <div className="grid__container" key={movie.id}>
-                  <img
-                    className="image-item"
-                    onClick={() => this.goToDetails(movie.id)}
-                    src={poster_path + movie.poster_path}
-                    style={{ height: '278px', width: '185px' }}
-                    alt="poster"
-                  />
-
-                  <div
-                    style={{
-                      fontSize: '16px',
-                      width: '185px',
-                      margin: 'auto'
-                    }}
-                  >
-                    {movie.title}
-                  </div>
-                </div>
-              ) : null;
-            })}
-          </div>
+          <Gallery movies={moviesList} />
         )}
       </div>
     );
