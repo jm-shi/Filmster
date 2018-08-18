@@ -30,7 +30,7 @@ class Searchbar extends React.Component {
       <form className={this.props.formClass} onSubmit={this.onSubmit}>
         {this.props.onHomePage ? <h1>Search for movies and TV shows</h1> : ''}
 
-        <div>
+        <div className={this.props.onHomePage ? null : 'searchbar-container'}>
           <input
             className={this.props.inputClass}
             value={this.state.query}

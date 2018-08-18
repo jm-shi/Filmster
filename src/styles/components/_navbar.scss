@@ -34,10 +34,7 @@
     outline: 0;
     width: 25rem;
   }
-}
-
-@media (min-width: $small-screen-breakpoint) {
-  .navbar {
+  @media (min-width: 570px) {
     flex-wrap: nowrap;
     height: auto;
     &--center {
@@ -48,4 +45,8 @@
       order: 3;
     }
   }
+}
+
+.searchbar-container {
+  width: 33rem;
 }
