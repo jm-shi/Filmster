@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { history } from '../AppRouter';
 
 class Searchbar extends React.Component {
   constructor(props) {
@@ -18,7 +17,7 @@ class Searchbar extends React.Component {
     e.preventDefault();
     const movieTitle = this.state.query;
     if (movieTitle) {
-      history.push({
+      this.props.history.push({
         pathname: '/search',
         state: movieTitle
       });
@@ -51,6 +50,7 @@ class Searchbar extends React.Component {
 Searchbar.propTypes = {
   formClass: PropTypes.string,
   inputClass: PropTypes.string,
+  history: PropTypes.object,
   onHomePage: PropTypes.bool
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { history } from '../AppRouter';
 import { NavLink } from 'react-router-dom';
 import Searchbar from './Searchbar';
 
@@ -56,7 +57,7 @@ const Navbar = () => (
     </NavLink>
 
     <div className="navbar--center">
-      <Searchbar inputClass="navbar__searchbar" />
+      <Searchbar inputClass="navbar__searchbar" history={history} />
     </div>
 
     <div className="navbar--right links small-screen">

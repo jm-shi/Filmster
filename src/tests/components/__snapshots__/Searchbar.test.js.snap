@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Searchbar 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Searchbar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "",
+        <div
+          className="searchbar-container"
+>
+          <input
+                    className={undefined}
+                    onChange={[Function]}
+                    placeholder="Enter a movie title"
+                    value=""
+          />
+          <button
+                    className="button"
+          >
+                    Search
+          </button>
+</div>,
+      ],
+      "className": undefined,
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              className={undefined}
+              onChange={[Function]}
+              placeholder="Enter a movie title"
+              value=""
+/>,
+            <button
+              className="button"
+>
+              Search
+</button>,
+          ],
+          "className": "searchbar-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": undefined,
+              "onChange": [Function],
+              "placeholder": "Enter a movie title",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Search",
+              "className": "button",
+            },
+            "ref": null,
+            "rendered": "Search",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "",
+          <div
+            className="searchbar-container"
+>
+            <input
+                        className={undefined}
+                        onChange={[Function]}
+                        placeholder="Enter a movie title"
+                        value=""
+            />
+            <button
+                        className="button"
+            >
+                        Search
+            </button>
+</div>,
+        ],
+        "className": undefined,
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                className={undefined}
+                onChange={[Function]}
+                placeholder="Enter a movie title"
+                value=""
+/>,
+              <button
+                className="button"
+>
+                Search
+</button>,
+            ],
+            "className": "searchbar-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "onChange": [Function],
+                "placeholder": "Enter a movie title",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Search",
+                "className": "button",
+              },
+              "ref": null,
+              "rendered": "Search",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

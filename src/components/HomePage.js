@@ -1,4 +1,5 @@
 import React from 'react';
+import { history } from '../AppRouter';
 import { NavLink } from 'react-router-dom';
 import Searchbar from './Searchbar';
 
@@ -21,7 +22,11 @@ const HomePage = () => (
     </div>
 
     <div className="container__box">
-      <Searchbar formClass={'home__searchbar'} onHomePage={true} />
+      <Searchbar
+        formClass={'home__searchbar'}
+        onHomePage={true}
+        history={history}
+      />
     </div>
   </div>
 );
