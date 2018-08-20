@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { history } from '../AppRouter';
 
 class Searchbar extends React.Component {
@@ -46,5 +47,11 @@ class Searchbar extends React.Component {
     );
   }
 }
+
+Searchbar.propTypes = {
+  formClass: PropTypes.string,
+  inputClass: PropTypes.string,
+  onHomePage: PropTypes.bool
+};
 
 export default Searchbar;

@@ -29,7 +29,7 @@ class DetailsPage extends React.Component {
   }
 
   componentDidMount = () => {
-    const backdrop_original = 'http://image.tmdb.org/t/p/original';
+    const backdrop_original = 'https://image.tmdb.org/t/p/original';
     const poster_path_342 = 'https://image.tmdb.org/t/p/w342';
     const poster_path_185 = 'https://image.tmdb.org/t/p/w185';
     const movieID = this.props.location.state;
@@ -73,6 +73,7 @@ class DetailsPage extends React.Component {
     } = this.state;
 
     const { loading } = this.props;
+    const { backdrop_path } = this.props.movieDetails;
     return (
       <div>
         <Navbar />
@@ -87,13 +88,15 @@ class DetailsPage extends React.Component {
           <LoadingPage />
         ) : (
           <div>
-            <div className="backdrop">
-              <img
-                className="backdrop__image"
-                src={backdrop_url}
-                alt="backdrop"
-              />
-            </div>
+            {backdrop_path ? (
+              <div className="backdrop">
+                <img
+                  className="backdrop__image"
+                  src={backdrop_url}
+                  alt="backdrop"
+                />
+              </div>
+            ) : null}
 
             <div className="container container__details container--med-margin-y">
               <div className="container__column">

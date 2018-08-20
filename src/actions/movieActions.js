@@ -1,25 +1,22 @@
 import axios from 'axios';
+import * as types from '../actions/actionTypes';
 
-export const FETCH_MOVIE_START = 'FETCH_MOVIE_START';
-const fetchMovieStart = () => ({
-  type: FETCH_MOVIE_START
+export const fetchMovieStart = () => ({
+  type: types.FETCH_MOVIE_START
 });
 
-export const FETCH_MOVIES_SUCCESS = 'FETCH_MOVIES_SUCCESS';
-const fetchMoviesSuccess = searchedMovies => ({
-  type: FETCH_MOVIES_SUCCESS,
+export const fetchMoviesSuccess = searchedMovies => ({
+  type: types.FETCH_MOVIES_SUCCESS,
   searchedMovies
 });
 
-export const FETCH_MOVIE_DETAILS_SUCCESS = 'FETCH_MOVIE_DETAILS_SUCCESS';
-const fetchMovieDetailsSuccess = movieDetails => ({
-  type: FETCH_MOVIE_DETAILS_SUCCESS,
+export const fetchMovieDetailsSuccess = movieDetails => ({
+  type: types.FETCH_MOVIE_DETAILS_SUCCESS,
   movieDetails
 });
 
-export const FETCH_MOVIE_FAILURE = 'FETCH_MOVIE_FAILURE';
-const fetchMovieFailure = error => ({
-  type: FETCH_MOVIE_FAILURE,
+export const fetchMovieFailure = error => ({
+  type: types.FETCH_MOVIE_FAILURE,
   error
 });
 
@@ -35,10 +32,10 @@ export const fetchMovie = movieTitle => {
     return axios
       .get(searchRequest)
       .then(response => {
-        dispatch(fetchMoviesSuccess(response.data.results));
+        dispatch(fetchMoviesSuccess(response.data));
       })
       .catch(error => {
-        dispatch(fetchMovieFailure(error.message));
+        dispatch(fetchMovieFailure(error));
       });
   };
 };
@@ -56,7 +53,7 @@ export const fetchMovieDetails = movieID => {
         dispatch(fetchMovieDetailsSuccess(response.data));
       })
       .catch(error => {
-        dispatch(fetchMovieFailure(error.message));
+        dispatch(fetchMovieFailure(error));
       });
   };
 };

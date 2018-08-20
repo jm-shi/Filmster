@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NotFoundPage 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NotFoundPage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Navbar />,
+        <div
+          className="container--centered"
+>
+          <div
+                    className="text--ms"
+          >
+                    Page not found
+          </div>
+          <Link
+                    className="link link--green"
+                    replace={false}
+                    to="/"
+          >
+                    Go home
+          </Link>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="text--ms"
+>
+              Page not found
+</div>,
+            <Link
+              className="link link--green"
+              replace={false}
+              to="/"
+>
+              Go home
+</Link>,
+          ],
+          "className": "container--centered",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Page not found",
+              "className": "text--ms",
+            },
+            "ref": null,
+            "rendered": "Page not found",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Go home",
+              "className": "link link--green",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Go home",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Navbar />,
+          <div
+            className="container--centered"
+>
+            <div
+                        className="text--ms"
+            >
+                        Page not found
+            </div>
+            <Link
+                        className="link link--green"
+                        replace={false}
+                        to="/"
+            >
+                        Go home
+            </Link>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="text--ms"
+>
+                Page not found
+</div>,
+              <Link
+                className="link link--green"
+                replace={false}
+                to="/"
+>
+                Go home
+</Link>,
+            ],
+            "className": "container--centered",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Page not found",
+                "className": "text--ms",
+              },
+              "ref": null,
+              "rendered": "Page not found",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Go home",
+                "className": "link link--green",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Go home",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
