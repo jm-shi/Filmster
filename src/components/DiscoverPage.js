@@ -14,9 +14,10 @@ class DiscoverPage extends React.Component {
       results: [],
       loading: true
     };
+    this.getMovies = this.getMovies.bind(this);
   }
 
-  getMovies = props => {
+  getMovies(props) {
     let searchType = props.match.params.type;
     searchType = searchType === undefined ? 'now_playing' : searchType;
     const api = `https://api.themoviedb.org/3/movie/${searchType}?api_key=${
@@ -34,15 +35,15 @@ class DiscoverPage extends React.Component {
       .catch(error => {
         console.log(error.message);
       });
-  };
+  }
 
-  componentDidMount = () => {
+  componentDidMount() {
     this.getMovies(this.props);
-  };
+  }
 
-  componentWillReceiveProps = nextProps => {
+  componentWillReceiveProps(nextProps) {
     this.getMovies(nextProps);
-  };
+  }
 
   render() {
     const { loading } = this.state;

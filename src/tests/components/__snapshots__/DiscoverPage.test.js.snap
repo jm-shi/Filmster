@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiscoverPage functions should render DiscoverPage 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DiscoverPage
+    match={
+        Object {
+            "params": Object {
+              "type": "now_playing",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Navbar />,
+        <LoadingPage />,
+        <div
+          className="container container--row container--margin-top-ms"
+>
+          <div
+                    className="grid"
+          >
+                    <NavLink
+                              activeClassName="selected"
+                              aria-current="page"
+                              className="link link__nav"
+                              exact={true}
+                              to="/discover"
+                    >
+                              Now Playing
+                    </NavLink>
+                    <NavLink
+                              activeClassName="selected"
+                              aria-current="page"
+                              className="link link__nav"
+                              to="/discover/popular"
+                    >
+                              Popular
+                    </NavLink>
+                    <NavLink
+                              activeClassName="selected"
+                              aria-current="page"
+                              className="link link__nav"
+                              to="/discover/top_rated"
+                    >
+                              Top Rated
+                    </NavLink>
+                    <NavLink
+                              activeClassName="selected"
+                              aria-current="page"
+                              className="link link__nav"
+                              to="/discover/upcoming"
+                    >
+                              Upcoming
+                    </NavLink>
+          </div>
+</div>,
+        <Connect(Gallery)
+          movies={Array []}
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="grid"
+>
+            <NavLink
+                        activeClassName="selected"
+                        aria-current="page"
+                        className="link link__nav"
+                        exact={true}
+                        to="/discover"
+            >
+                        Now Playing
+            </NavLink>
+            <NavLink
+                        activeClassName="selected"
+                        aria-current="page"
+                        className="link link__nav"
+                        to="/discover/popular"
+            >
+                        Popular
+            </NavLink>
+            <NavLink
+                        activeClassName="selected"
+                        aria-current="page"
+                        className="link link__nav"
+                        to="/discover/top_rated"
+            >
+                        Top Rated
+            </NavLink>
+            <NavLink
+                        activeClassName="selected"
+                        aria-current="page"
+                        className="link link__nav"
+                        to="/discover/upcoming"
+            >
+                        Upcoming
+            </NavLink>
+</div>,
+          "className": "container container--row container--margin-top-ms",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                exact={true}
+                to="/discover"
+>
+                Now Playing
+</NavLink>,
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/popular"
+>
+                Popular
+</NavLink>,
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/top_rated"
+>
+                Top Rated
+</NavLink>,
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/upcoming"
+>
+                Upcoming
+</NavLink>,
+            ],
+            "className": "grid",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected",
+                "aria-current": "page",
+                "children": "Now Playing",
+                "className": "link link__nav",
+                "exact": true,
+                "to": "/discover",
+              },
+              "ref": null,
+              "rendered": "Now Playing",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected",
+                "aria-current": "page",
+                "children": "Popular",
+                "className": "link link__nav",
+                "to": "/discover/popular",
+              },
+              "ref": null,
+              "rendered": "Popular",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected",
+                "aria-current": "page",
+                "children": "Top Rated",
+                "className": "link link__nav",
+                "to": "/discover/top_rated",
+              },
+              "ref": null,
+              "rendered": "Top Rated",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected",
+                "aria-current": "page",
+                "children": "Upcoming",
+                "className": "link link__nav",
+                "to": "/discover/upcoming",
+              },
+              "ref": null,
+              "rendered": "Upcoming",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "movies": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Navbar />,
+          <LoadingPage />,
+          <div
+            className="container container--row container--margin-top-ms"
+>
+            <div
+                        className="grid"
+            >
+                        <NavLink
+                                    activeClassName="selected"
+                                    aria-current="page"
+                                    className="link link__nav"
+                                    exact={true}
+                                    to="/discover"
+                        >
+                                    Now Playing
+                        </NavLink>
+                        <NavLink
+                                    activeClassName="selected"
+                                    aria-current="page"
+                                    className="link link__nav"
+                                    to="/discover/popular"
+                        >
+                                    Popular
+                        </NavLink>
+                        <NavLink
+                                    activeClassName="selected"
+                                    aria-current="page"
+                                    className="link link__nav"
+                                    to="/discover/top_rated"
+                        >
+                                    Top Rated
+                        </NavLink>
+                        <NavLink
+                                    activeClassName="selected"
+                                    aria-current="page"
+                                    className="link link__nav"
+                                    to="/discover/upcoming"
+                        >
+                                    Upcoming
+                        </NavLink>
+            </div>
+</div>,
+          <Connect(Gallery)
+            movies={Array []}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="grid"
+>
+              <NavLink
+                            activeClassName="selected"
+                            aria-current="page"
+                            className="link link__nav"
+                            exact={true}
+                            to="/discover"
+              >
+                            Now Playing
+              </NavLink>
+              <NavLink
+                            activeClassName="selected"
+                            aria-current="page"
+                            className="link link__nav"
+                            to="/discover/popular"
+              >
+                            Popular
+              </NavLink>
+              <NavLink
+                            activeClassName="selected"
+                            aria-current="page"
+                            className="link link__nav"
+                            to="/discover/top_rated"
+              >
+                            Top Rated
+              </NavLink>
+              <NavLink
+                            activeClassName="selected"
+                            aria-current="page"
+                            className="link link__nav"
+                            to="/discover/upcoming"
+              >
+                            Upcoming
+              </NavLink>
+</div>,
+            "className": "container container--row container--margin-top-ms",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="link link__nav"
+                  exact={true}
+                  to="/discover"
+>
+                  Now Playing
+</NavLink>,
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="link link__nav"
+                  to="/discover/popular"
+>
+                  Popular
+</NavLink>,
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="link link__nav"
+                  to="/discover/top_rated"
+>
+                  Top Rated
+</NavLink>,
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="link link__nav"
+                  to="/discover/upcoming"
+>
+                  Upcoming
+</NavLink>,
+              ],
+              "className": "grid",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "Now Playing",
+                  "className": "link link__nav",
+                  "exact": true,
+                  "to": "/discover",
+                },
+                "ref": null,
+                "rendered": "Now Playing",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "Popular",
+                  "className": "link link__nav",
+                  "to": "/discover/popular",
+                },
+                "ref": null,
+                "rendered": "Popular",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "Top Rated",
+                  "className": "link link__nav",
+                  "to": "/discover/top_rated",
+                },
+                "ref": null,
+                "rendered": "Top Rated",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "Upcoming",
+                  "className": "link link__nav",
+                  "to": "/discover/upcoming",
+                },
+                "ref": null,
+                "rendered": "Upcoming",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "movies": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

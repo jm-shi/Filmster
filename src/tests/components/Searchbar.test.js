@@ -27,11 +27,7 @@ test('should update Searchbar state upon query change', () => {
 
 test('should call history.push upon submit and movie title exists', () => {
   wrapper.setState({ query: 'Movie title' });
-  const form = wrapper.find('form');
-  //console.log(form.debug());
-  //console.log(wrapper.instance());
-  form.simulate('submit', event);
-
+  wrapper.find('form').simulate('submit', event);
   expect(mockHistory.push).toHaveBeenCalledTimes(1);
 });
 
