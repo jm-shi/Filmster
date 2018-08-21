@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery component should render Gallery 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Gallery
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+    movies={
+        Array [
+            Object {
+              "id": 123,
+              "poster_path": "posterpath",
+              "title": "A movie title",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="grid__container"
+>
+          <img
+                    alt="poster"
+                    className="image-item"
+                    onClick={[Function]}
+                    src="https://image.tmdb.org/t/p/w185/posterpath"
+                    style={
+                              Object {
+                                        "height": "278px",
+                                        "width": "185px",
+                                      }
+                    }
+          />
+          <div
+                    style={
+                              Object {
+                                        "fontSize": "16px",
+                                        "margin": "auto",
+                                        "width": "185px",
+                                      }
+                    }
+          >
+                    A movie title
+          </div>
+</div>,
+      ],
+      "className": "grid grid__results",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "123",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="poster"
+              className="image-item"
+              onClick={[Function]}
+              src="https://image.tmdb.org/t/p/w185/posterpath"
+              style={
+                            Object {
+                                          "height": "278px",
+                                          "width": "185px",
+                                        }
+              }
+/>,
+            <div
+              style={
+                            Object {
+                                          "fontSize": "16px",
+                                          "margin": "auto",
+                                          "width": "185px",
+                                        }
+              }
+>
+              A movie title
+</div>,
+          ],
+          "className": "grid__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "poster",
+              "className": "image-item",
+              "onClick": [Function],
+              "src": "https://image.tmdb.org/t/p/w185/posterpath",
+              "style": Object {
+                "height": "278px",
+                "width": "185px",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "A movie title",
+              "style": Object {
+                "fontSize": "16px",
+                "margin": "auto",
+                "width": "185px",
+              },
+            },
+            "ref": null,
+            "rendered": "A movie title",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="grid__container"
+>
+            <img
+                        alt="poster"
+                        className="image-item"
+                        onClick={[Function]}
+                        src="https://image.tmdb.org/t/p/w185/posterpath"
+                        style={
+                                    Object {
+                                                "height": "278px",
+                                                "width": "185px",
+                                              }
+                        }
+            />
+            <div
+                        style={
+                                    Object {
+                                                "fontSize": "16px",
+                                                "margin": "auto",
+                                                "width": "185px",
+                                              }
+                        }
+            >
+                        A movie title
+            </div>
+</div>,
+        ],
+        "className": "grid grid__results",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "123",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="poster"
+                className="image-item"
+                onClick={[Function]}
+                src="https://image.tmdb.org/t/p/w185/posterpath"
+                style={
+                                Object {
+                                                "height": "278px",
+                                                "width": "185px",
+                                              }
+                }
+/>,
+              <div
+                style={
+                                Object {
+                                                "fontSize": "16px",
+                                                "margin": "auto",
+                                                "width": "185px",
+                                              }
+                }
+>
+                A movie title
+</div>,
+            ],
+            "className": "grid__container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "poster",
+                "className": "image-item",
+                "onClick": [Function],
+                "src": "https://image.tmdb.org/t/p/w185/posterpath",
+                "style": Object {
+                  "height": "278px",
+                  "width": "185px",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "A movie title",
+                "style": Object {
+                  "fontSize": "16px",
+                  "margin": "auto",
+                  "width": "185px",
+                },
+              },
+              "ref": null,
+              "rendered": "A movie title",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

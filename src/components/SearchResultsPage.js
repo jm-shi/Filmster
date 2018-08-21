@@ -1,28 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchMovie } from '../actions/movieActions';
-import { history } from '../AppRouter';
 import LoadingPage from './LoadingPage';
 import Gallery from './Gallery';
 import Navbar from './Navbar';
 
-class SearchResultsPage extends React.Component {
+export class SearchResultsPage extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       moviesList: []
     };
+
+    this.fetchMovies = this.fetchMovies.bind(this);
   }
-  goToDetails = id => {
-    if (id) {
-      history.push({
-        pathname: '/details',
-        state: id
-      });
-    }
-  };
-  fetchMovies = () => {
+
+  fetchMovies() {
     const movieTitle = this.props.location.state;
     if (!movieTitle) return;
 
@@ -32,11 +27,11 @@ class SearchResultsPage extends React.Component {
         moviesList
       }));
     });
-  };
+  }
 
-  componentDidMount = () => {
+  componentDidMount() {
     this.fetchMovies();
-  };
+  }
 
   componentDidUpdate(prevProps) {
     if (this.props.location.state !== prevProps.location.state) {
@@ -67,6 +62,12 @@ class SearchResultsPage extends React.Component {
     );
   }
 }
+
+SearchResultsPage.propTypes = {
+  loading: PropTypes.bool,
+  onFetchMovie: PropTypes.func,
+  searchedMovies: PropTypes.array
+};
 
 const mapStateToProps = state => {
   const { loading, searchedMovies } = state.movieReducer;

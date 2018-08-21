@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchMovieDetails } from '../actions/movieActions';
 import LoadingPage from './LoadingPage';
 import Navbar from './Navbar';
 
-class DetailsPage extends React.Component {
+export class DetailsPage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -24,11 +25,8 @@ class DetailsPage extends React.Component {
       vote_average: ''
     };
   }
-  showSettings(event) {
-    event.preventDefault();
-  }
 
-  componentDidMount = () => {
+  componentDidMount() {
     const backdrop_original = 'https://image.tmdb.org/t/p/original';
     const poster_path_342 = 'https://image.tmdb.org/t/p/w342';
     const poster_path_185 = 'https://image.tmdb.org/t/p/w185';
@@ -53,7 +51,7 @@ class DetailsPage extends React.Component {
         vote_average: movie.vote_average
       }));
     });
-  };
+  }
 
   render() {
     let {
@@ -178,6 +176,12 @@ class DetailsPage extends React.Component {
     );
   }
 }
+
+DetailsPage.propTypes = {
+  loading: PropTypes.bool,
+  movieDetails: PropTypes.object,
+  onFetchMovieDetails: PropTypes.func
+};
 
 const mapStateToProps = state => {
   const { loading, movieDetails } = state.movieReducer;

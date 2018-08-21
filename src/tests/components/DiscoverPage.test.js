@@ -13,7 +13,7 @@ const props = {
   }
 };
 
-describe('DiscoverPage functions', () => {
+describe('DiscoverPage component', () => {
   beforeEach(() => {
     mockAdapter = new MockAdapter(axios);
     request = `https://api.themoviedb.org/3/movie/now_playing?api_key=${

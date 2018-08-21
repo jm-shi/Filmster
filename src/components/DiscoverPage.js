@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { history } from '../AppRouter';
 import { NavLink } from 'react-router-dom';
 
 import LoadingPage from './LoadingPage';
@@ -87,7 +88,7 @@ class DiscoverPage extends React.Component {
           </div>
         </div>
 
-        <Gallery movies={this.state.results} />
+        <Gallery history={history} movies={this.state.results} />
       </div>
     );
   }

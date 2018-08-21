@@ -1,0 +1,1393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPage component should render DetailsPage 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailsPage
+    loading={false}
+    location={
+        Object {
+            "state": "Movie title",
+          }
+    }
+    movieDetails={
+        Object {
+            "title": "Inception",
+          }
+    }
+    onFetchMovieDetails={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Navbar />,
+        <div>
+          <div
+                    className="container container__details container--med-margin-y"
+          >
+                    <div
+                              className="container__column"
+                    >
+                              <img
+                                        alt="poster"
+                                        className="large-screen"
+                                        src="https://image.tmdb.org/t/p/w342undefined"
+                              />
+                              <img
+                                        alt="poster"
+                                        className="sub-large-screen"
+                                        src="https://image.tmdb.org/t/p/w185undefined"
+                              />
+                    </div>
+                    <div
+                              className="container__column container--margin-bottom details"
+                    >
+                              <div
+                                        className="details__title"
+                              >
+                                        Inception
+                              </div>
+                              <div
+                                        className="details--med details--green"
+                              />
+                              <div
+                                        className="details--med-small"
+                              />
+                              <div
+                                        className="line-break"
+                              />
+                              <div
+                                        className="grid"
+                              >
+                                        <div
+                                                  className="grid__item-halves details--med-small"
+                                        >
+                                                  <div
+                                                            className="details--green"
+                                                  >
+                                                            Release Date
+                                                  </div>
+                                                  N/A
+                                        </div>
+                                        <div
+                                                  className="grid__item-halves details--med-small details-green"
+                                        >
+                                                  <div
+                                                            className="details--green"
+                                                  >
+                                                            Rating
+                                                  </div>
+                                                  N/A
+                                        </div>
+                                        <div
+                                                  className="grid__item-halves details--med-small details-green"
+                                        >
+                                                  <div
+                                                            className="details--green"
+                                                  >
+                                                            Runtime
+                                                  </div>
+                                                  N/A
+                                        </div>
+                                        <div
+                                                  className="grid__item-halves details--med-small details-green"
+                                        >
+                                                  <div
+                                                            className="details--green"
+                                                  >
+                                                            Budget
+                                                  </div>
+                                                  N/A
+                                        </div>
+                              </div>
+                              <div
+                                        className="line-break"
+                              />
+                    </div>
+          </div>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            null,
+            <div
+              className="container container__details container--med-margin-y"
+>
+              <div
+                            className="container__column"
+              >
+                            <img
+                                          alt="poster"
+                                          className="large-screen"
+                                          src="https://image.tmdb.org/t/p/w342undefined"
+                            />
+                            <img
+                                          alt="poster"
+                                          className="sub-large-screen"
+                                          src="https://image.tmdb.org/t/p/w185undefined"
+                            />
+              </div>
+              <div
+                            className="container__column container--margin-bottom details"
+              >
+                            <div
+                                          className="details__title"
+                            >
+                                          Inception
+                            </div>
+                            <div
+                                          className="details--med details--green"
+                            />
+                            <div
+                                          className="details--med-small"
+                            />
+                            <div
+                                          className="line-break"
+                            />
+                            <div
+                                          className="grid"
+                            >
+                                          <div
+                                                        className="grid__item-halves details--med-small"
+                                          >
+                                                        <div
+                                                                      className="details--green"
+                                                        >
+                                                                      Release Date
+                                                        </div>
+                                                        N/A
+                                          </div>
+                                          <div
+                                                        className="grid__item-halves details--med-small details-green"
+                                          >
+                                                        <div
+                                                                      className="details--green"
+                                                        >
+                                                                      Rating
+                                                        </div>
+                                                        N/A
+                                          </div>
+                                          <div
+                                                        className="grid__item-halves details--med-small details-green"
+                                          >
+                                                        <div
+                                                                      className="details--green"
+                                                        >
+                                                                      Runtime
+                                                        </div>
+                                                        N/A
+                                          </div>
+                                          <div
+                                                        className="grid__item-halves details--med-small details-green"
+                                          >
+                                                        <div
+                                                                      className="details--green"
+                                                        >
+                                                                      Budget
+                                                        </div>
+                                                        N/A
+                                          </div>
+                            </div>
+                            <div
+                                          className="line-break"
+                            />
+              </div>
+</div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          null,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="container__column"
+>
+                  <img
+                                    alt="poster"
+                                    className="large-screen"
+                                    src="https://image.tmdb.org/t/p/w342undefined"
+                  />
+                  <img
+                                    alt="poster"
+                                    className="sub-large-screen"
+                                    src="https://image.tmdb.org/t/p/w185undefined"
+                  />
+</div>,
+                <div
+                  className="container__column container--margin-bottom details"
+>
+                  <div
+                                    className="details__title"
+                  >
+                                    Inception
+                  </div>
+                  <div
+                                    className="details--med details--green"
+                  />
+                  <div
+                                    className="details--med-small"
+                  />
+                  <div
+                                    className="line-break"
+                  />
+                  <div
+                                    className="grid"
+                  >
+                                    <div
+                                                      className="grid__item-halves details--med-small"
+                                    >
+                                                      <div
+                                                                        className="details--green"
+                                                      >
+                                                                        Release Date
+                                                      </div>
+                                                      N/A
+                                    </div>
+                                    <div
+                                                      className="grid__item-halves details--med-small details-green"
+                                    >
+                                                      <div
+                                                                        className="details--green"
+                                                      >
+                                                                        Rating
+                                                      </div>
+                                                      N/A
+                                    </div>
+                                    <div
+                                                      className="grid__item-halves details--med-small details-green"
+                                    >
+                                                      <div
+                                                                        className="details--green"
+                                                      >
+                                                                        Runtime
+                                                      </div>
+                                                      N/A
+                                    </div>
+                                    <div
+                                                      className="grid__item-halves details--med-small details-green"
+                                    >
+                                                      <div
+                                                                        className="details--green"
+                                                      >
+                                                                        Budget
+                                                      </div>
+                                                      N/A
+                                    </div>
+                  </div>
+                  <div
+                                    className="line-break"
+                  />
+</div>,
+              ],
+              "className": "container container__details container--med-margin-y",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <img
+                      alt="poster"
+                      className="large-screen"
+                      src="https://image.tmdb.org/t/p/w342undefined"
+/>,
+                    <img
+                      alt="poster"
+                      className="sub-large-screen"
+                      src="https://image.tmdb.org/t/p/w185undefined"
+/>,
+                  ],
+                  "className": "container__column",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "poster",
+                      "className": "large-screen",
+                      "src": "https://image.tmdb.org/t/p/w342undefined",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "poster",
+                      "className": "sub-large-screen",
+                      "src": "https://image.tmdb.org/t/p/w185undefined",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="details__title"
+>
+                      Inception
+</div>,
+                    <div
+                      className="details--med details--green"
+/>,
+                    <div
+                      className="details--med-small"
+/>,
+                    <div
+                      className="line-break"
+/>,
+                    <div
+                      className="grid"
+>
+                      <div
+                                            className="grid__item-halves details--med-small"
+                      >
+                                            <div
+                                                                  className="details--green"
+                                            >
+                                                                  Release Date
+                                            </div>
+                                            N/A
+                      </div>
+                      <div
+                                            className="grid__item-halves details--med-small details-green"
+                      >
+                                            <div
+                                                                  className="details--green"
+                                            >
+                                                                  Rating
+                                            </div>
+                                            N/A
+                      </div>
+                      <div
+                                            className="grid__item-halves details--med-small details-green"
+                      >
+                                            <div
+                                                                  className="details--green"
+                                            >
+                                                                  Runtime
+                                            </div>
+                                            N/A
+                      </div>
+                      <div
+                                            className="grid__item-halves details--med-small details-green"
+                      >
+                                            <div
+                                                                  className="details--green"
+                                            >
+                                                                  Budget
+                                            </div>
+                                            N/A
+                      </div>
+</div>,
+                    <div
+                      className="line-break"
+/>,
+                    null,
+                    null,
+                    null,
+                  ],
+                  "className": "container__column container--margin-bottom details",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Inception",
+                      "className": "details__title",
+                    },
+                    "ref": null,
+                    "rendered": "Inception",
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "details--med details--green",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "details--med-small",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line-break",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div
+                          className="grid__item-halves details--med-small"
+>
+                          <div
+                                                    className="details--green"
+                          >
+                                                    Release Date
+                          </div>
+                          N/A
+</div>,
+                        <div
+                          className="grid__item-halves details--med-small details-green"
+>
+                          <div
+                                                    className="details--green"
+                          >
+                                                    Rating
+                          </div>
+                          N/A
+</div>,
+                        <div
+                          className="grid__item-halves details--med-small details-green"
+>
+                          <div
+                                                    className="details--green"
+                          >
+                                                    Runtime
+                          </div>
+                          N/A
+</div>,
+                        <div
+                          className="grid__item-halves details--med-small details-green"
+>
+                          <div
+                                                    className="details--green"
+                          >
+                                                    Budget
+                          </div>
+                          N/A
+</div>,
+                      ],
+                      "className": "grid",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="details--green"
+>
+                              Release Date
+</div>,
+                            "N/A",
+                          ],
+                          "className": "grid__item-halves details--med-small",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Release Date",
+                              "className": "details--green",
+                            },
+                            "ref": null,
+                            "rendered": "Release Date",
+                            "type": "div",
+                          },
+                          "N/A",
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="details--green"
+>
+                              Rating
+</div>,
+                            "N/A",
+                          ],
+                          "className": "grid__item-halves details--med-small details-green",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Rating",
+                              "className": "details--green",
+                            },
+                            "ref": null,
+                            "rendered": "Rating",
+                            "type": "div",
+                          },
+                          "N/A",
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="details--green"
+>
+                              Runtime
+</div>,
+                            "N/A",
+                          ],
+                          "className": "grid__item-halves details--med-small details-green",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Runtime",
+                              "className": "details--green",
+                            },
+                            "ref": null,
+                            "rendered": "Runtime",
+                            "type": "div",
+                          },
+                          "N/A",
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="details--green"
+>
+                              Budget
+</div>,
+                            "N/A",
+                          ],
+                          "className": "grid__item-halves details--med-small details-green",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Budget",
+                              "className": "details--green",
+                            },
+                            "ref": null,
+                            "rendered": "Budget",
+                            "type": "div",
+                          },
+                          "N/A",
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line-break",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                  null,
+                  null,
+                  null,
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Navbar />,
+          <div>
+            <div
+                        className="container container__details container--med-margin-y"
+            >
+                        <div
+                                    className="container__column"
+                        >
+                                    <img
+                                                alt="poster"
+                                                className="large-screen"
+                                                src="https://image.tmdb.org/t/p/w342undefined"
+                                    />
+                                    <img
+                                                alt="poster"
+                                                className="sub-large-screen"
+                                                src="https://image.tmdb.org/t/p/w185undefined"
+                                    />
+                        </div>
+                        <div
+                                    className="container__column container--margin-bottom details"
+                        >
+                                    <div
+                                                className="details__title"
+                                    >
+                                                Inception
+                                    </div>
+                                    <div
+                                                className="details--med details--green"
+                                    />
+                                    <div
+                                                className="details--med-small"
+                                    />
+                                    <div
+                                                className="line-break"
+                                    />
+                                    <div
+                                                className="grid"
+                                    >
+                                                <div
+                                                            className="grid__item-halves details--med-small"
+                                                >
+                                                            <div
+                                                                        className="details--green"
+                                                            >
+                                                                        Release Date
+                                                            </div>
+                                                            N/A
+                                                </div>
+                                                <div
+                                                            className="grid__item-halves details--med-small details-green"
+                                                >
+                                                            <div
+                                                                        className="details--green"
+                                                            >
+                                                                        Rating
+                                                            </div>
+                                                            N/A
+                                                </div>
+                                                <div
+                                                            className="grid__item-halves details--med-small details-green"
+                                                >
+                                                            <div
+                                                                        className="details--green"
+                                                            >
+                                                                        Runtime
+                                                            </div>
+                                                            N/A
+                                                </div>
+                                                <div
+                                                            className="grid__item-halves details--med-small details-green"
+                                                >
+                                                            <div
+                                                                        className="details--green"
+                                                            >
+                                                                        Budget
+                                                            </div>
+                                                            N/A
+                                                </div>
+                                    </div>
+                                    <div
+                                                className="line-break"
+                                    />
+                        </div>
+            </div>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              null,
+              <div
+                className="container container__details container--med-margin-y"
+>
+                <div
+                                className="container__column"
+                >
+                                <img
+                                                alt="poster"
+                                                className="large-screen"
+                                                src="https://image.tmdb.org/t/p/w342undefined"
+                                />
+                                <img
+                                                alt="poster"
+                                                className="sub-large-screen"
+                                                src="https://image.tmdb.org/t/p/w185undefined"
+                                />
+                </div>
+                <div
+                                className="container__column container--margin-bottom details"
+                >
+                                <div
+                                                className="details__title"
+                                >
+                                                Inception
+                                </div>
+                                <div
+                                                className="details--med details--green"
+                                />
+                                <div
+                                                className="details--med-small"
+                                />
+                                <div
+                                                className="line-break"
+                                />
+                                <div
+                                                className="grid"
+                                >
+                                                <div
+                                                                className="grid__item-halves details--med-small"
+                                                >
+                                                                <div
+                                                                                className="details--green"
+                                                                >
+                                                                                Release Date
+                                                                </div>
+                                                                N/A
+                                                </div>
+                                                <div
+                                                                className="grid__item-halves details--med-small details-green"
+                                                >
+                                                                <div
+                                                                                className="details--green"
+                                                                >
+                                                                                Rating
+                                                                </div>
+                                                                N/A
+                                                </div>
+                                                <div
+                                                                className="grid__item-halves details--med-small details-green"
+                                                >
+                                                                <div
+                                                                                className="details--green"
+                                                                >
+                                                                                Runtime
+                                                                </div>
+                                                                N/A
+                                                </div>
+                                                <div
+                                                                className="grid__item-halves details--med-small details-green"
+                                                >
+                                                                <div
+                                                                                className="details--green"
+                                                                >
+                                                                                Budget
+                                                                </div>
+                                                                N/A
+                                                </div>
+                                </div>
+                                <div
+                                                className="line-break"
+                                />
+                </div>
+</div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="container__column"
+>
+                    <img
+                                        alt="poster"
+                                        className="large-screen"
+                                        src="https://image.tmdb.org/t/p/w342undefined"
+                    />
+                    <img
+                                        alt="poster"
+                                        className="sub-large-screen"
+                                        src="https://image.tmdb.org/t/p/w185undefined"
+                    />
+</div>,
+                  <div
+                    className="container__column container--margin-bottom details"
+>
+                    <div
+                                        className="details__title"
+                    >
+                                        Inception
+                    </div>
+                    <div
+                                        className="details--med details--green"
+                    />
+                    <div
+                                        className="details--med-small"
+                    />
+                    <div
+                                        className="line-break"
+                    />
+                    <div
+                                        className="grid"
+                    >
+                                        <div
+                                                            className="grid__item-halves details--med-small"
+                                        >
+                                                            <div
+                                                                                className="details--green"
+                                                            >
+                                                                                Release Date
+                                                            </div>
+                                                            N/A
+                                        </div>
+                                        <div
+                                                            className="grid__item-halves details--med-small details-green"
+                                        >
+                                                            <div
+                                                                                className="details--green"
+                                                            >
+                                                                                Rating
+                                                            </div>
+                                                            N/A
+                                        </div>
+                                        <div
+                                                            className="grid__item-halves details--med-small details-green"
+                                        >
+                                                            <div
+                                                                                className="details--green"
+                                                            >
+                                                                                Runtime
+                                                            </div>
+                                                            N/A
+                                        </div>
+                                        <div
+                                                            className="grid__item-halves details--med-small details-green"
+                                        >
+                                                            <div
+                                                                                className="details--green"
+                                                            >
+                                                                                Budget
+                                                            </div>
+                                                            N/A
+                                        </div>
+                    </div>
+                    <div
+                                        className="line-break"
+                    />
+</div>,
+                ],
+                "className": "container container__details container--med-margin-y",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <img
+                        alt="poster"
+                        className="large-screen"
+                        src="https://image.tmdb.org/t/p/w342undefined"
+/>,
+                      <img
+                        alt="poster"
+                        className="sub-large-screen"
+                        src="https://image.tmdb.org/t/p/w185undefined"
+/>,
+                    ],
+                    "className": "container__column",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "poster",
+                        "className": "large-screen",
+                        "src": "https://image.tmdb.org/t/p/w342undefined",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "poster",
+                        "className": "sub-large-screen",
+                        "src": "https://image.tmdb.org/t/p/w185undefined",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="details__title"
+>
+                        Inception
+</div>,
+                      <div
+                        className="details--med details--green"
+/>,
+                      <div
+                        className="details--med-small"
+/>,
+                      <div
+                        className="line-break"
+/>,
+                      <div
+                        className="grid"
+>
+                        <div
+                                                className="grid__item-halves details--med-small"
+                        >
+                                                <div
+                                                                        className="details--green"
+                                                >
+                                                                        Release Date
+                                                </div>
+                                                N/A
+                        </div>
+                        <div
+                                                className="grid__item-halves details--med-small details-green"
+                        >
+                                                <div
+                                                                        className="details--green"
+                                                >
+                                                                        Rating
+                                                </div>
+                                                N/A
+                        </div>
+                        <div
+                                                className="grid__item-halves details--med-small details-green"
+                        >
+                                                <div
+                                                                        className="details--green"
+                                                >
+                                                                        Runtime
+                                                </div>
+                                                N/A
+                        </div>
+                        <div
+                                                className="grid__item-halves details--med-small details-green"
+                        >
+                                                <div
+                                                                        className="details--green"
+                                                >
+                                                                        Budget
+                                                </div>
+                                                N/A
+                        </div>
+</div>,
+                      <div
+                        className="line-break"
+/>,
+                      null,
+                      null,
+                      null,
+                    ],
+                    "className": "container__column container--margin-bottom details",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Inception",
+                        "className": "details__title",
+                      },
+                      "ref": null,
+                      "rendered": "Inception",
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "details--med details--green",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                        "className": "details--med-small",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line-break",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <div
+                            className="grid__item-halves details--med-small"
+>
+                            <div
+                                                        className="details--green"
+                            >
+                                                        Release Date
+                            </div>
+                            N/A
+</div>,
+                          <div
+                            className="grid__item-halves details--med-small details-green"
+>
+                            <div
+                                                        className="details--green"
+                            >
+                                                        Rating
+                            </div>
+                            N/A
+</div>,
+                          <div
+                            className="grid__item-halves details--med-small details-green"
+>
+                            <div
+                                                        className="details--green"
+                            >
+                                                        Runtime
+                            </div>
+                            N/A
+</div>,
+                          <div
+                            className="grid__item-halves details--med-small details-green"
+>
+                            <div
+                                                        className="details--green"
+                            >
+                                                        Budget
+                            </div>
+                            N/A
+</div>,
+                        ],
+                        "className": "grid",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="details--green"
+>
+                                Release Date
+</div>,
+                              "N/A",
+                            ],
+                            "className": "grid__item-halves details--med-small",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Release Date",
+                                "className": "details--green",
+                              },
+                              "ref": null,
+                              "rendered": "Release Date",
+                              "type": "div",
+                            },
+                            "N/A",
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="details--green"
+>
+                                Rating
+</div>,
+                              "N/A",
+                            ],
+                            "className": "grid__item-halves details--med-small details-green",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Rating",
+                                "className": "details--green",
+                              },
+                              "ref": null,
+                              "rendered": "Rating",
+                              "type": "div",
+                            },
+                            "N/A",
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="details--green"
+>
+                                Runtime
+</div>,
+                              "N/A",
+                            ],
+                            "className": "grid__item-halves details--med-small details-green",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Runtime",
+                                "className": "details--green",
+                              },
+                              "ref": null,
+                              "rendered": "Runtime",
+                              "type": "div",
+                            },
+                            "N/A",
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="details--green"
+>
+                                Budget
+</div>,
+                              "N/A",
+                            ],
+                            "className": "grid__item-halves details--med-small details-green",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Budget",
+                                "className": "details--green",
+                              },
+                              "ref": null,
+                              "rendered": "Budget",
+                              "type": "div",
+                            },
+                            "N/A",
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line-break",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                    null,
+                    null,
+                    null,
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

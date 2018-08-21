@@ -1,18 +1,19 @@
 import React from 'react';
 
-import { connect } from 'react-redux';
-import { fetchMovieDetails } from '../actions/movieActions';
-import { history } from '../AppRouter';
-
 class Gallery extends React.Component {
-  goToDetails = id => {
+  constructor(props) {
+    super(props);
+
+    this.goToDetails = this.goToDetails.bind(this);
+  }
+  goToDetails(id) {
     if (id) {
-      history.push({
+      this.props.history.push({
         pathname: '/details',
         state: id
       });
     }
-  };
+  }
   render() {
     const poster_path = 'https://image.tmdb.org/t/p/w185/';
 
@@ -46,13 +47,4 @@ class Gallery extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onFetchMovieDetails: movieID => dispatch(fetchMovieDetails(movieID))
-  };
-};
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(Gallery);
+export default Gallery;
