@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchMovie } from '../actions/movieActions';
+import { history } from '../AppRouter';
 import LoadingPage from './LoadingPage';
 import Gallery from './Gallery';
 import Navbar from './Navbar';
@@ -56,7 +57,7 @@ export class SearchResultsPage extends React.Component {
         ) : loading ? (
           <LoadingPage />
         ) : (
-          <Gallery movies={moviesList} />
+          <Gallery history={history} movies={moviesList} />
         )}
       </div>
     );
