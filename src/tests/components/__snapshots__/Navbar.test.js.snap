@@ -22,74 +22,74 @@ ShallowWrapper {
           aria-current="page"
           className="navbar--left link link__logo"
           to="/"
->
+        >
           <div
-                    className="logo"
+            className="logo"
           >
-                    MovieDB
+            Filmster
           </div>
-</NavLink>,
+        </NavLink>,
         <div
           className="navbar--center"
->
+        >
           <Searchbar
-                    history={
-                              Object {
-                                        "action": "POP",
-                                        "block": [Function],
-                                        "createHref": [Function],
-                                        "go": [Function],
-                                        "goBack": [Function],
-                                        "goForward": [Function],
-                                        "length": 1,
-                                        "listen": [Function],
-                                        "location": Object {
-                                          "hash": "",
-                                          "pathname": "/",
-                                          "search": "",
-                                          "state": undefined,
-                                        },
-                                        "push": [Function],
-                                        "replace": [Function],
-                                      }
-                    }
-                    inputClass="navbar__searchbar"
+            history={
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+            inputClass="navbar__searchbar"
           />
-</div>,
+        </div>,
         <div
           className="navbar--right links small-screen"
->
+        >
           <Dropdown />
-</div>,
+        </div>,
         <div
           className="navbar--right links medium-screen"
->
+        >
           <NavLink
-                    activeClassName="selected"
-                    aria-current="page"
-                    className="link"
-                    exact={true}
-                    to="/"
+            activeClassName="selected"
+            aria-current="page"
+            className="link"
+            exact={true}
+            to="/"
           >
-                    Home
+            Home
           </NavLink>
           <NavLink
-                    activeClassName="selected"
-                    aria-current="page"
-                    className="link"
-                    to="/search"
+            activeClassName="selected"
+            aria-current="page"
+            className="link"
+            to="/search"
           >
-                    Search
+            Search
           </NavLink>
           <NavLink
-                    activeClassName="selected"
-                    aria-current="page"
-                    className="link"
-                    to="/discover"
+            activeClassName="selected"
+            aria-current="page"
+            className="link"
+            to="/discover"
           >
-                    Discover
+            Discover
           </NavLink>
-</div>,
+        </div>,
       ],
       "className": "navbar",
     },
@@ -104,9 +104,9 @@ ShallowWrapper {
           "aria-current": "page",
           "children": <div
             className="logo"
->
-            MovieDB
-</div>,
+          >
+            Filmster
+          </div>,
           "className": "navbar--left link link__logo",
           "to": "/",
         },
@@ -116,11 +116,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "MovieDB",
+            "children": "Filmster",
             "className": "logo",
           },
           "ref": null,
-          "rendered": "MovieDB",
+          "rendered": "Filmster",
           "type": "div",
         },
         "type": [Function],
@@ -132,27 +132,27 @@ ShallowWrapper {
         "props": Object {
           "children": <Searchbar
             history={
-                        Object {
-                                    "action": "POP",
-                                    "block": [Function],
-                                    "createHref": [Function],
-                                    "go": [Function],
-                                    "goBack": [Function],
-                                    "goForward": [Function],
-                                    "length": 1,
-                                    "listen": [Function],
-                                    "location": Object {
-                                      "hash": "",
-                                      "pathname": "/",
-                                      "search": "",
-                                      "state": undefined,
-                                    },
-                                    "push": [Function],
-                                    "replace": [Function],
-                                  }
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
             }
             inputClass="navbar__searchbar"
-/>,
+          />,
           "className": "navbar--center",
         },
         "ref": null,
@@ -219,25 +219,25 @@ ShallowWrapper {
               className="link"
               exact={true}
               to="/"
->
+            >
               Home
-</NavLink>,
+            </NavLink>,
             <NavLink
               activeClassName="selected"
               aria-current="page"
               className="link"
               to="/search"
->
+            >
               Search
-</NavLink>,
+            </NavLink>,
             <NavLink
               activeClassName="selected"
               aria-current="page"
               className="link"
               to="/discover"
->
+            >
               Discover
-</NavLink>,
+            </NavLink>,
           ],
           "className": "navbar--right links medium-screen",
         },
@@ -307,74 +307,74 @@ ShallowWrapper {
             aria-current="page"
             className="navbar--left link link__logo"
             to="/"
->
+          >
             <div
-                        className="logo"
+              className="logo"
             >
-                        MovieDB
+              Filmster
             </div>
-</NavLink>,
+          </NavLink>,
           <div
             className="navbar--center"
->
+          >
             <Searchbar
-                        history={
-                                    Object {
-                                                "action": "POP",
-                                                "block": [Function],
-                                                "createHref": [Function],
-                                                "go": [Function],
-                                                "goBack": [Function],
-                                                "goForward": [Function],
-                                                "length": 1,
-                                                "listen": [Function],
-                                                "location": Object {
-                                                  "hash": "",
-                                                  "pathname": "/",
-                                                  "search": "",
-                                                  "state": undefined,
-                                                },
-                                                "push": [Function],
-                                                "replace": [Function],
-                                              }
-                        }
-                        inputClass="navbar__searchbar"
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              inputClass="navbar__searchbar"
             />
-</div>,
+          </div>,
           <div
             className="navbar--right links small-screen"
->
+          >
             <Dropdown />
-</div>,
+          </div>,
           <div
             className="navbar--right links medium-screen"
->
+          >
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link"
-                        exact={true}
-                        to="/"
+              activeClassName="selected"
+              aria-current="page"
+              className="link"
+              exact={true}
+              to="/"
             >
-                        Home
+              Home
             </NavLink>
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link"
-                        to="/search"
+              activeClassName="selected"
+              aria-current="page"
+              className="link"
+              to="/search"
             >
-                        Search
+              Search
             </NavLink>
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link"
-                        to="/discover"
+              activeClassName="selected"
+              aria-current="page"
+              className="link"
+              to="/discover"
             >
-                        Discover
+              Discover
             </NavLink>
-</div>,
+          </div>,
         ],
         "className": "navbar",
       },
@@ -389,9 +389,9 @@ ShallowWrapper {
             "aria-current": "page",
             "children": <div
               className="logo"
->
-              MovieDB
-</div>,
+            >
+              Filmster
+            </div>,
             "className": "navbar--left link link__logo",
             "to": "/",
           },
@@ -401,11 +401,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "MovieDB",
+              "children": "Filmster",
               "className": "logo",
             },
             "ref": null,
-            "rendered": "MovieDB",
+            "rendered": "Filmster",
             "type": "div",
           },
           "type": [Function],
@@ -417,27 +417,27 @@ ShallowWrapper {
           "props": Object {
             "children": <Searchbar
               history={
-                            Object {
-                                          "action": "POP",
-                                          "block": [Function],
-                                          "createHref": [Function],
-                                          "go": [Function],
-                                          "goBack": [Function],
-                                          "goForward": [Function],
-                                          "length": 1,
-                                          "listen": [Function],
-                                          "location": Object {
-                                            "hash": "",
-                                            "pathname": "/",
-                                            "search": "",
-                                            "state": undefined,
-                                          },
-                                          "push": [Function],
-                                          "replace": [Function],
-                                        }
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
               }
               inputClass="navbar__searchbar"
-/>,
+            />,
             "className": "navbar--center",
           },
           "ref": null,
@@ -504,25 +504,25 @@ ShallowWrapper {
                 className="link"
                 exact={true}
                 to="/"
->
+              >
                 Home
-</NavLink>,
+              </NavLink>,
               <NavLink
                 activeClassName="selected"
                 aria-current="page"
                 className="link"
                 to="/search"
->
+              >
                 Search
-</NavLink>,
+              </NavLink>,
               <NavLink
                 activeClassName="selected"
                 aria-current="page"
                 className="link"
                 to="/discover"
->
+              >
                 Discover
-</NavLink>,
+              </NavLink>,
             ],
             "className": "navbar--right links medium-screen",
           },

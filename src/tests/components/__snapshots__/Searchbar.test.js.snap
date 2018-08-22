@@ -5,11 +5,11 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Searchbar
     history={
-        Object {
-            "push": [Function],
-          }
+      Object {
+        "push": [MockFunction],
+      }
     }
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -26,21 +26,25 @@ ShallowWrapper {
         "",
         <div
           className="searchbar-container"
->
+        >
+          <label
+            htmlFor="search"
+          />
           <input
-                    className={undefined}
-                    onChange={[Function]}
-                    placeholder="Enter a movie title"
-                    value=""
+            className={undefined}
+            onChange={[Function]}
+            placeholder="Enter a movie title"
+            value=""
           />
           <button
-                    className="button"
+            className="button"
           >
-                    Search
+            Search
           </button>
-</div>,
+        </div>,
       ],
       "className": undefined,
+      "name": "search",
       "onSubmit": [Function],
     },
     "ref": null,
@@ -52,22 +56,36 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <label
+              htmlFor="search"
+            />,
             <input
               className={undefined}
               onChange={[Function]}
               placeholder="Enter a movie title"
               value=""
-/>,
+            />,
             <button
               className="button"
->
+            >
               Search
-</button>,
+            </button>,
           ],
           "className": "searchbar-container",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "htmlFor": "search",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "label",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -110,21 +128,25 @@ ShallowWrapper {
           "",
           <div
             className="searchbar-container"
->
+          >
+            <label
+              htmlFor="search"
+            />
             <input
-                        className={undefined}
-                        onChange={[Function]}
-                        placeholder="Enter a movie title"
-                        value=""
+              className={undefined}
+              onChange={[Function]}
+              placeholder="Enter a movie title"
+              value=""
             />
             <button
-                        className="button"
+              className="button"
             >
-                        Search
+              Search
             </button>
-</div>,
+          </div>,
         ],
         "className": undefined,
+        "name": "search",
         "onSubmit": [Function],
       },
       "ref": null,
@@ -136,22 +158,36 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <label
+                htmlFor="search"
+              />,
               <input
                 className={undefined}
                 onChange={[Function]}
                 placeholder="Enter a movie title"
                 value=""
-/>,
+              />,
               <button
                 className="button"
->
+              >
                 Search
-</button>,
+              </button>,
             ],
             "className": "searchbar-container",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "htmlFor": "search",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "label",
+            },
             Object {
               "instance": null,
               "key": undefined,

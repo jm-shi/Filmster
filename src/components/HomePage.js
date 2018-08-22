@@ -6,7 +6,7 @@ import Searchbar from './Searchbar';
 const HomePage = () => (
   <div className="container container--column">
     <div className="logo">
-      <h1>MovieDB</h1>
+      <h1>Filmster</h1>
     </div>
 
     <div>

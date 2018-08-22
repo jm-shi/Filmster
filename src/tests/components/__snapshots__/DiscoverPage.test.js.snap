@@ -5,13 +5,13 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DiscoverPage
     match={
-        Object {
-            "params": Object {
-              "type": "now_playing",
-            },
-          }
+      Object {
+        "params": Object {
+          "type": "now_playing",
+        },
+      }
     }
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -29,68 +29,68 @@ ShallowWrapper {
         <LoadingPage />,
         <div
           className="container container--row container--margin-top-ms"
->
+        >
           <div
-                    className="grid"
+            className="grid"
           >
-                    <NavLink
-                              activeClassName="selected"
-                              aria-current="page"
-                              className="link link__nav"
-                              exact={true}
-                              to="/discover"
-                    >
-                              Now Playing
-                    </NavLink>
-                    <NavLink
-                              activeClassName="selected"
-                              aria-current="page"
-                              className="link link__nav"
-                              to="/discover/popular"
-                    >
-                              Popular
-                    </NavLink>
-                    <NavLink
-                              activeClassName="selected"
-                              aria-current="page"
-                              className="link link__nav"
-                              to="/discover/top_rated"
-                    >
-                              Top Rated
-                    </NavLink>
-                    <NavLink
-                              activeClassName="selected"
-                              aria-current="page"
-                              className="link link__nav"
-                              to="/discover/upcoming"
-                    >
-                              Upcoming
-                    </NavLink>
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              exact={true}
+              to="/discover"
+            >
+              Now Playing
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              to="/discover/popular"
+            >
+              Popular
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              to="/discover/top_rated"
+            >
+              Top Rated
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              to="/discover/upcoming"
+            >
+              Upcoming
+            </NavLink>
           </div>
-</div>,
+        </div>,
         <Gallery
           history={
-                    Object {
-                              "action": "POP",
-                              "block": [Function],
-                              "createHref": [Function],
-                              "go": [Function],
-                              "goBack": [Function],
-                              "goForward": [Function],
-                              "length": 1,
-                              "listen": [Function],
-                              "location": Object {
-                                "hash": "",
-                                "pathname": "/",
-                                "search": "",
-                                "state": undefined,
-                              },
-                              "push": [Function],
-                              "replace": [Function],
-                            }
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
           }
           movies={Array []}
-/>,
+        />,
       ],
     },
     "ref": null,
@@ -120,41 +120,41 @@ ShallowWrapper {
         "props": Object {
           "children": <div
             className="grid"
->
+          >
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link link__nav"
-                        exact={true}
-                        to="/discover"
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              exact={true}
+              to="/discover"
             >
-                        Now Playing
+              Now Playing
             </NavLink>
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link link__nav"
-                        to="/discover/popular"
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              to="/discover/popular"
             >
-                        Popular
+              Popular
             </NavLink>
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link link__nav"
-                        to="/discover/top_rated"
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              to="/discover/top_rated"
             >
-                        Top Rated
+              Top Rated
             </NavLink>
             <NavLink
-                        activeClassName="selected"
-                        aria-current="page"
-                        className="link link__nav"
-                        to="/discover/upcoming"
+              activeClassName="selected"
+              aria-current="page"
+              className="link link__nav"
+              to="/discover/upcoming"
             >
-                        Upcoming
+              Upcoming
             </NavLink>
-</div>,
+          </div>,
           "className": "container container--row container--margin-top-ms",
         },
         "ref": null,
@@ -170,33 +170,33 @@ ShallowWrapper {
                 className="link link__nav"
                 exact={true}
                 to="/discover"
->
+              >
                 Now Playing
-</NavLink>,
+              </NavLink>,
               <NavLink
                 activeClassName="selected"
                 aria-current="page"
                 className="link link__nav"
                 to="/discover/popular"
->
+              >
                 Popular
-</NavLink>,
+              </NavLink>,
               <NavLink
                 activeClassName="selected"
                 aria-current="page"
                 className="link link__nav"
                 to="/discover/top_rated"
->
+              >
                 Top Rated
-</NavLink>,
+              </NavLink>,
               <NavLink
                 activeClassName="selected"
                 aria-current="page"
                 className="link link__nav"
                 to="/discover/upcoming"
->
+              >
                 Upcoming
-</NavLink>,
+              </NavLink>,
             ],
             "className": "grid",
           },
@@ -311,68 +311,68 @@ ShallowWrapper {
           <LoadingPage />,
           <div
             className="container container--row container--margin-top-ms"
->
+          >
             <div
-                        className="grid"
+              className="grid"
             >
-                        <NavLink
-                                    activeClassName="selected"
-                                    aria-current="page"
-                                    className="link link__nav"
-                                    exact={true}
-                                    to="/discover"
-                        >
-                                    Now Playing
-                        </NavLink>
-                        <NavLink
-                                    activeClassName="selected"
-                                    aria-current="page"
-                                    className="link link__nav"
-                                    to="/discover/popular"
-                        >
-                                    Popular
-                        </NavLink>
-                        <NavLink
-                                    activeClassName="selected"
-                                    aria-current="page"
-                                    className="link link__nav"
-                                    to="/discover/top_rated"
-                        >
-                                    Top Rated
-                        </NavLink>
-                        <NavLink
-                                    activeClassName="selected"
-                                    aria-current="page"
-                                    className="link link__nav"
-                                    to="/discover/upcoming"
-                        >
-                                    Upcoming
-                        </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                exact={true}
+                to="/discover"
+              >
+                Now Playing
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/popular"
+              >
+                Popular
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/top_rated"
+              >
+                Top Rated
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/upcoming"
+              >
+                Upcoming
+              </NavLink>
             </div>
-</div>,
+          </div>,
           <Gallery
             history={
-                        Object {
-                                    "action": "POP",
-                                    "block": [Function],
-                                    "createHref": [Function],
-                                    "go": [Function],
-                                    "goBack": [Function],
-                                    "goForward": [Function],
-                                    "length": 1,
-                                    "listen": [Function],
-                                    "location": Object {
-                                      "hash": "",
-                                      "pathname": "/",
-                                      "search": "",
-                                      "state": undefined,
-                                    },
-                                    "push": [Function],
-                                    "replace": [Function],
-                                  }
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
             }
             movies={Array []}
-/>,
+          />,
         ],
       },
       "ref": null,
@@ -402,41 +402,41 @@ ShallowWrapper {
           "props": Object {
             "children": <div
               className="grid"
->
+            >
               <NavLink
-                            activeClassName="selected"
-                            aria-current="page"
-                            className="link link__nav"
-                            exact={true}
-                            to="/discover"
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                exact={true}
+                to="/discover"
               >
-                            Now Playing
+                Now Playing
               </NavLink>
               <NavLink
-                            activeClassName="selected"
-                            aria-current="page"
-                            className="link link__nav"
-                            to="/discover/popular"
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/popular"
               >
-                            Popular
+                Popular
               </NavLink>
               <NavLink
-                            activeClassName="selected"
-                            aria-current="page"
-                            className="link link__nav"
-                            to="/discover/top_rated"
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/top_rated"
               >
-                            Top Rated
+                Top Rated
               </NavLink>
               <NavLink
-                            activeClassName="selected"
-                            aria-current="page"
-                            className="link link__nav"
-                            to="/discover/upcoming"
+                activeClassName="selected"
+                aria-current="page"
+                className="link link__nav"
+                to="/discover/upcoming"
               >
-                            Upcoming
+                Upcoming
               </NavLink>
-</div>,
+            </div>,
             "className": "container container--row container--margin-top-ms",
           },
           "ref": null,
@@ -452,33 +452,33 @@ ShallowWrapper {
                   className="link link__nav"
                   exact={true}
                   to="/discover"
->
+                >
                   Now Playing
-</NavLink>,
+                </NavLink>,
                 <NavLink
                   activeClassName="selected"
                   aria-current="page"
                   className="link link__nav"
                   to="/discover/popular"
->
+                >
                   Popular
-</NavLink>,
+                </NavLink>,
                 <NavLink
                   activeClassName="selected"
                   aria-current="page"
                   className="link link__nav"
                   to="/discover/top_rated"
->
+                >
                   Top Rated
-</NavLink>,
+                </NavLink>,
                 <NavLink
                   activeClassName="selected"
                   aria-current="page"
                   className="link link__nav"
                   to="/discover/upcoming"
->
+                >
                   Upcoming
-</NavLink>,
+                </NavLink>,
               ],
               "className": "grid",
             },

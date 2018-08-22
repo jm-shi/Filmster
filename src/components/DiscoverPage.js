@@ -42,7 +42,7 @@ class DiscoverPage extends React.Component {
     this.getMovies(this.props);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.getMovies(nextProps);
   }
 

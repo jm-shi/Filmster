@@ -19,7 +19,7 @@ ShallowWrapper {
       "children": <img
         alt="Loading..."
         src="/images/loader.gif"
-/>,
+      />,
       "className": "container--centered",
     },
     "ref": null,
@@ -46,7 +46,7 @@ ShallowWrapper {
         "children": <img
           alt="Loading..."
           src="/images/loader.gif"
-/>,
+        />,
         "className": "container--centered",
       },
       "ref": null,

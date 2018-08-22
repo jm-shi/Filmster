@@ -7,7 +7,7 @@ import Searchbar from './Searchbar';
 const Navbar = () => (
   <div className="navbar">
     <NavLink className="navbar--left link link__logo" to="/">
-      <div className="logo">MovieDB</div>
+      <div className="logo">Filmster</div>
     </NavLink>
 
     <div className="navbar--center">

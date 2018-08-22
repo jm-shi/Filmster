@@ -6,18 +6,26 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <SearchResultsPage
     loading={false}
     location={
-        Object {
-            "state": "Movie title",
-          }
+      Object {
+        "state": "Movie title",
+      }
     }
-    onFetchMovie={[Function]}
+    onFetchMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "Movie title",
+          ],
+        ],
+      }
+    }
     searchedMovies={
-        Array [
-            "Movie 1",
-            "Movie 2",
-          ]
+      Array [
+        "Movie 1",
+        "Movie 2",
+      ]
     }
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -34,32 +42,32 @@ ShallowWrapper {
         <Navbar />,
         <Gallery
           history={
-                    Object {
-                              "action": "POP",
-                              "block": [Function],
-                              "createHref": [Function],
-                              "go": [Function],
-                              "goBack": [Function],
-                              "goForward": [Function],
-                              "length": 1,
-                              "listen": [Function],
-                              "location": Object {
-                                "hash": "",
-                                "pathname": "/",
-                                "search": "",
-                                "state": undefined,
-                              },
-                              "push": [Function],
-                              "replace": [Function],
-                            }
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
           }
           movies={
-                    Array [
-                              "Movie 1",
-                              "Movie 2",
-                            ]
+            Array [
+              "Movie 1",
+              "Movie 2",
+            ]
           }
-/>,
+        />,
       ],
     },
     "ref": null,
@@ -118,32 +126,32 @@ ShallowWrapper {
           <Navbar />,
           <Gallery
             history={
-                        Object {
-                                    "action": "POP",
-                                    "block": [Function],
-                                    "createHref": [Function],
-                                    "go": [Function],
-                                    "goBack": [Function],
-                                    "goForward": [Function],
-                                    "length": 1,
-                                    "listen": [Function],
-                                    "location": Object {
-                                      "hash": "",
-                                      "pathname": "/",
-                                      "search": "",
-                                      "state": undefined,
-                                    },
-                                    "push": [Function],
-                                    "replace": [Function],
-                                  }
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
             }
             movies={
-                        Array [
-                                    "Movie 1",
-                                    "Movie 2",
-                                  ]
+              Array [
+                "Movie 1",
+                "Movie 2",
+              ]
             }
-/>,
+          />,
         ],
       },
       "ref": null,

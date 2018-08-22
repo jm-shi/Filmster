@@ -20,9 +20,9 @@ ShallowWrapper {
         <div
           className="dropdown__button"
           onClick={[Function]}
->
+        >
           Settings
-</div>,
+        </div>,
         null,
       ],
       "className": "dropdown",
@@ -56,9 +56,9 @@ ShallowWrapper {
           <div
             className="dropdown__button"
             onClick={[Function]}
->
+          >
             Settings
-</div>,
+          </div>,
           null,
         ],
         "className": "dropdown",

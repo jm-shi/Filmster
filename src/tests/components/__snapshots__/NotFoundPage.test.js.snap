@@ -20,20 +20,20 @@ ShallowWrapper {
         <Navbar />,
         <div
           className="container--centered"
->
+        >
           <div
-                    className="text--ms"
+            className="text--ms"
           >
-                    Page not found
+            Page not found
           </div>
           <Link
-                    className="link link--green"
-                    replace={false}
-                    to="/"
+            className="link link--green"
+            replace={false}
+            to="/"
           >
-                    Go home
+            Go home
           </Link>
-</div>,
+        </div>,
       ],
     },
     "ref": null,
@@ -55,16 +55,16 @@ ShallowWrapper {
           "children": Array [
             <div
               className="text--ms"
->
+            >
               Page not found
-</div>,
+            </div>,
             <Link
               className="link link--green"
               replace={false}
               to="/"
->
+            >
               Go home
-</Link>,
+            </Link>,
           ],
           "className": "container--centered",
         },
@@ -112,20 +112,20 @@ ShallowWrapper {
           <Navbar />,
           <div
             className="container--centered"
->
+          >
             <div
-                        className="text--ms"
+              className="text--ms"
             >
-                        Page not found
+              Page not found
             </div>
             <Link
-                        className="link link--green"
-                        replace={false}
-                        to="/"
+              className="link link--green"
+              replace={false}
+              to="/"
             >
-                        Go home
+              Go home
             </Link>
-</div>,
+          </div>,
         ],
       },
       "ref": null,
@@ -147,16 +147,16 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="text--ms"
->
+              >
                 Page not found
-</div>,
+              </div>,
               <Link
                 className="link link--green"
                 replace={false}
                 to="/"
->
+              >
                 Go home
-</Link>,
+              </Link>,
             ],
             "className": "container--centered",
           },

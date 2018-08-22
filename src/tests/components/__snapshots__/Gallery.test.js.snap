@@ -5,20 +5,20 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Gallery
     history={
-        Object {
-            "push": [Function],
-          }
+      Object {
+        "push": [MockFunction],
+      }
     }
     movies={
-        Array [
-            Object {
-              "id": 123,
-              "poster_path": "posterpath",
-              "title": "A movie title",
-            },
-          ]
+      Array [
+        Object {
+          "id": 123,
+          "poster_path": "posterpath",
+          "title": "A movie title",
+        },
+      ]
     }
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -34,31 +34,31 @@ ShallowWrapper {
       "children": Array [
         <div
           className="grid__container"
->
+        >
           <img
-                    alt="poster"
-                    className="image-item"
-                    onClick={[Function]}
-                    src="https://image.tmdb.org/t/p/w185/posterpath"
-                    style={
-                              Object {
-                                        "height": "278px",
-                                        "width": "185px",
-                                      }
-                    }
+            alt="poster"
+            className="image-item"
+            onClick={[Function]}
+            src="https://image.tmdb.org/t/p/w185/posterpath"
+            style={
+              Object {
+                "height": "278px",
+                "width": "185px",
+              }
+            }
           />
           <div
-                    style={
-                              Object {
-                                        "fontSize": "16px",
-                                        "margin": "auto",
-                                        "width": "185px",
-                                      }
-                    }
+            style={
+              Object {
+                "fontSize": "16px",
+                "margin": "auto",
+                "width": "185px",
+              }
+            }
           >
-                    A movie title
+            A movie title
           </div>
-</div>,
+        </div>,
       ],
       "className": "grid grid__results",
     },
@@ -76,23 +76,23 @@ ShallowWrapper {
               onClick={[Function]}
               src="https://image.tmdb.org/t/p/w185/posterpath"
               style={
-                            Object {
-                                          "height": "278px",
-                                          "width": "185px",
-                                        }
+                Object {
+                  "height": "278px",
+                  "width": "185px",
+                }
               }
-/>,
+            />,
             <div
               style={
-                            Object {
-                                          "fontSize": "16px",
-                                          "margin": "auto",
-                                          "width": "185px",
-                                        }
+                Object {
+                  "fontSize": "16px",
+                  "margin": "auto",
+                  "width": "185px",
+                }
               }
->
+            >
               A movie title
-</div>,
+            </div>,
           ],
           "className": "grid__container",
         },
@@ -147,31 +147,31 @@ ShallowWrapper {
         "children": Array [
           <div
             className="grid__container"
->
+          >
             <img
-                        alt="poster"
-                        className="image-item"
-                        onClick={[Function]}
-                        src="https://image.tmdb.org/t/p/w185/posterpath"
-                        style={
-                                    Object {
-                                                "height": "278px",
-                                                "width": "185px",
-                                              }
-                        }
+              alt="poster"
+              className="image-item"
+              onClick={[Function]}
+              src="https://image.tmdb.org/t/p/w185/posterpath"
+              style={
+                Object {
+                  "height": "278px",
+                  "width": "185px",
+                }
+              }
             />
             <div
-                        style={
-                                    Object {
-                                                "fontSize": "16px",
-                                                "margin": "auto",
-                                                "width": "185px",
-                                              }
-                        }
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "margin": "auto",
+                  "width": "185px",
+                }
+              }
             >
-                        A movie title
+              A movie title
             </div>
-</div>,
+          </div>,
         ],
         "className": "grid grid__results",
       },
@@ -189,23 +189,23 @@ ShallowWrapper {
                 onClick={[Function]}
                 src="https://image.tmdb.org/t/p/w185/posterpath"
                 style={
-                                Object {
-                                                "height": "278px",
-                                                "width": "185px",
-                                              }
+                  Object {
+                    "height": "278px",
+                    "width": "185px",
+                  }
                 }
-/>,
+              />,
               <div
                 style={
-                                Object {
-                                                "fontSize": "16px",
-                                                "margin": "auto",
-                                                "width": "185px",
-                                              }
+                  Object {
+                    "fontSize": "16px",
+                    "margin": "auto",
+                    "width": "185px",
+                  }
                 }
->
+              >
                 A movie title
-</div>,
+              </div>,
             ],
             "className": "grid__container",
           },

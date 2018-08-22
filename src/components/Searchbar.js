@@ -26,15 +26,20 @@ class Searchbar extends React.Component {
   render() {
     return (
       <form className={this.props.formClass} onSubmit={this.onSubmit}>
-        {this.props.onHomePage ? <h1>Search for movies to learn more</h1> : ''}
-
         <div className={this.props.onHomePage ? null : 'searchbar-container'}>
-          <input
-            className={this.props.inputClass}
-            value={this.state.query}
-            onChange={this.onQueryChange}
-            placeholder={'Enter a movie title'}
-          />
+          <label>
+            {this.props.onHomePage ? (
+              <h1>Search for movies to learn more</h1>
+            ) : null}
+
+            <input
+              className={this.props.inputClass}
+              value={this.state.query}
+              onChange={this.onQueryChange}
+              placeholder={'Enter a movie title'}
+              type="text"
+            />
+          </label>
 
           {this.props.onHomePage ? (
             <button className="button button--home">Search</button>
