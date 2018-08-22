@@ -22,49 +22,150 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        "",
-        <div
-          className="searchbar-container"
-        >
-          <label
-            htmlFor="search"
-          />
+      "children": <div
+        className="searchbar-container"
+      >
+        <label>
           <input
             className={undefined}
             onChange={[Function]}
             placeholder="Enter a movie title"
+            type="text"
             value=""
           />
+        </label>
+        <button
+          className="button"
+        >
+          Search
+        </button>
+      </div>,
+      "className": undefined,
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label>
+            <input
+              className={undefined}
+              onChange={[Function]}
+              placeholder="Enter a movie title"
+              type="text"
+              value=""
+            />
+          </label>,
+          <button
+            className="button"
+          >
+            Search
+          </button>,
+        ],
+        "className": "searchbar-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              null,
+              <input
+                className={undefined}
+                onChange={[Function]}
+                placeholder="Enter a movie title"
+                type="text"
+                value=""
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "onChange": [Function],
+                "placeholder": "Enter a movie title",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search",
+            "className": "button",
+          },
+          "ref": null,
+          "rendered": "Search",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="searchbar-container"
+        >
+          <label>
+            <input
+              className={undefined}
+              onChange={[Function]}
+              placeholder="Enter a movie title"
+              type="text"
+              value=""
+            />
+          </label>
           <button
             className="button"
           >
             Search
           </button>
         </div>,
-      ],
-      "className": undefined,
-      "name": "search",
-      "onSubmit": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
-      "",
-      Object {
+        "className": undefined,
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <label
-              htmlFor="search"
-            />,
-            <input
-              className={undefined}
-              onChange={[Function]}
-              placeholder="Enter a movie title"
-              value=""
-            />,
+            <label>
+              <input
+                className={undefined}
+                onChange={[Function]}
+                placeholder="Enter a movie title"
+                type="text"
+                value=""
+              />
+            </label>,
             <button
               className="button"
             >
@@ -80,25 +181,37 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "htmlFor": "search",
+              "children": Array [
+                null,
+                <input
+                  className={undefined}
+                  onChange={[Function]}
+                  placeholder="Enter a movie title"
+                  type="text"
+                  value=""
+                />,
+              ],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              null,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": undefined,
+                  "onChange": [Function],
+                  "placeholder": "Enter a movie title",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
             "type": "label",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": undefined,
-              "onChange": [Function],
-              "placeholder": "Enter a movie title",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
           },
           Object {
             "instance": null,
@@ -115,109 +228,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          "",
-          <div
-            className="searchbar-container"
-          >
-            <label
-              htmlFor="search"
-            />
-            <input
-              className={undefined}
-              onChange={[Function]}
-              placeholder="Enter a movie title"
-              value=""
-            />
-            <button
-              className="button"
-            >
-              Search
-            </button>
-          </div>,
-        ],
-        "className": undefined,
-        "name": "search",
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        "",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <label
-                htmlFor="search"
-              />,
-              <input
-                className={undefined}
-                onChange={[Function]}
-                placeholder="Enter a movie title"
-                value=""
-              />,
-              <button
-                className="button"
-              >
-                Search
-              </button>,
-            ],
-            "className": "searchbar-container",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "htmlFor": "search",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": undefined,
-                "onChange": [Function],
-                "placeholder": "Enter a movie title",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Search",
-                "className": "button",
-              },
-              "ref": null,
-              "rendered": "Search",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-      ],
       "type": "form",
     },
   ],

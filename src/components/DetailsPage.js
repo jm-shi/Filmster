@@ -35,6 +35,7 @@ export class DetailsPage extends React.Component {
 
     Promise.resolve(this.props.onFetchMovieDetails(movieID)).then(() => {
       const movie = this.props.movieDetails;
+
       this.setState(() => ({
         backdrop_url: backdrop_original + movie.backdrop_path,
         budget: movie.budget,
@@ -179,7 +180,7 @@ export class DetailsPage extends React.Component {
 
 DetailsPage.propTypes = {
   loading: PropTypes.bool,
-  movieDetails: PropTypes.object,
+  movieDetails: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   onFetchMovieDetails: PropTypes.func
 };
 
