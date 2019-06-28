@@ -36,14 +36,20 @@ class DiscoverPage extends React.Component {
       .catch(error => {
         console.log(error.message);
       });
+
+    return [];
   }
 
   componentDidMount() {
     this.getMovies(this.props);
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    this.getMovies(nextProps);
+  componentDidUpdate(prevProps) {
+    const prevCategory = prevProps.match.params.type;
+    const currCategory = this.props.match.params.type;
+    if (prevCategory !== currCategory) {
+      this.getMovies(this.props);
+    }
   }
 
   render() {

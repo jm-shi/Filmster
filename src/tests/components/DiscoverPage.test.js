@@ -47,10 +47,10 @@ describe('DiscoverPage component', () => {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should handle componentWillReceiveProps', async () => {
+  it('should handle componentDidUpdate', async () => {
     const spy = jest.spyOn(DiscoverPage.prototype, 'getMovies');
     const wrapper = shallow(<DiscoverPage {...props} />);
-    await wrapper.instance().UNSAFE_componentWillReceiveProps(props);
+    await wrapper.instance().componentDidUpdate(props);
     expect(spy).toHaveBeenCalled();
   });
 });
